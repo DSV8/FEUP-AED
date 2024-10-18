@@ -1,0 +1,14 @@
+"/Users/dsv_8/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Users/dsv_8/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/222.4167.35/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/dsv_8/Downloads/AED/aed2223_p06 -B /Users/dsv_8/Downloads/AED/aed2223_p06/cmake-build-debug
+-- git version: v0.0.0 normalized to 0.0.0
+-- Version: 1.7.0
+-- Enabling additional flags: -DINCLUDE_DIRECTORIES=/Users/dsv_8/Downloads/AED/aed2223_p06/lib/benchmark/include
+-- Performing Test HAVE_THREAD_SAFETY_ATTRIBUTES -- success
+-- Performing Test HAVE_STD_REGEX -- success
+-- Performing Test HAVE_GNU_POSIX_REGEX -- failed to compile
+-- Performing Test HAVE_POSIX_REGEX -- success
+-- Performing Test HAVE_STEADY_CLOCK -- success
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+Doxygen needs to be installed to generate the documentation.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/dsv_8/Downloads/AED/aed2223_p06/cmake-build-debug

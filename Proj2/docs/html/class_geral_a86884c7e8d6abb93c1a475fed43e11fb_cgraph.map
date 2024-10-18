@@ -1,0 +1,5 @@
+<map id="Geral::lerairlines" name="Geral::lerairlines">
+<area shape="rect" id="node1" title="Lê os dados de companhias aéreas de um arquivo CSV e armazena em um vetor de Airline." alt="" coords="5,5,121,31"/>
+<area shape="rect" id="node2" href="$class_csv_leitor.html#a8dad5de8334527ef89439b3a7d4a8847" title="Lê o arquivo CSV especificado e armazena os valores em um vetor de CsvLinha." alt="" coords="169,5,267,31"/>
+<area shape="rect" id="node3" href="$class_csv_linha.html#a8bd1405968a593fce335eec17a33a62b" title="Divide a linha em colunas." alt="" coords="315,5,440,31"/>
+</map>

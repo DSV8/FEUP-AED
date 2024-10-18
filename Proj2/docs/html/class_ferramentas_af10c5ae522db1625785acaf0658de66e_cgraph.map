@@ -1,0 +1,6 @@
+<map id="Ferramentas::calculatedistanceairports" name="Ferramentas::calculatedistanceairports">
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,252,80"/>
+<area shape="rect" id="node2" href="$class_aeroporto.html#a587f1a27cbb9ba2a0f08edee92786891" title="Obtém as coordenadas geográficas do aeroporto." alt="" coords="300,5,479,31"/>
+<area shape="rect" id="node3" href="$class_coordenadas.html#a5561c681caf5ccc77da0e61fd8d41dec" title="Obtém a latitude das coordenadas." alt="" coords="306,55,473,80"/>
+<area shape="rect" id="node4" href="$class_coordenadas.html#a9210daf8ada1613d53db2a527f3fa250" title="Obtém a longitude das coordenadas." alt="" coords="301,104,477,129"/>
+</map>

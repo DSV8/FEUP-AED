@@ -1,0 +1,607 @@
+\hypertarget{class_geral}{}\doxysection{Geral Class Reference}
+\label{class_geral}\index{Geral@{Geral}}
+
+
+{\ttfamily \#include $<$Geral.\+h$>$}
+
+
+
+Collaboration diagram for Geral\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_geral__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_geral_a4361a2b6782a2ad02eaeeecc2984aaf6}{Geral}} ()
+\item 
+void \mbox{\hyperlink{class_geral_a35d59d7468951859fff79cfc9d7641ab}{leraeroportos}} ()
+\begin{DoxyCompactList}\small\item\em Lê os dados de aeroportos de um arquivo CSV e armazena em um vetor de \mbox{\hyperlink{class_aeroporto}{Aeroporto}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_geral_a86884c7e8d6abb93c1a475fed43e11fb}{lerairlines}} ()
+\begin{DoxyCompactList}\small\item\em Lê os dados de companhias aéreas de um arquivo CSV e armazena em um vetor de \mbox{\hyperlink{class_airline}{Airline}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_geral_a1170df32093bfd23b805ca89f4022029}{lervoos}} ()
+\begin{DoxyCompactList}\small\item\em Lê os dados de voo de um arquivo CSV e armazena em um vetor de \mbox{\hyperlink{class_voo}{Voo}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_airline}{Airline}} $>$ \mbox{\hyperlink{class_geral_a8e82c5d1cf114006c5185a1dbe735a84}{getairlines}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o vetor de objetos da classe \mbox{\hyperlink{class_airline}{Airline}} armazenados na classe \mbox{\hyperlink{class_geral}{Geral}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ \mbox{\hyperlink{class_geral_a62a34dabfa96e07a0c6e51e0d3e3671d}{getvoos}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o vetor de objetos da classe \mbox{\hyperlink{class_voo}{Voo}} armazenados na classe \mbox{\hyperlink{class_geral}{Geral}}. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ string, \mbox{\hyperlink{class_cidade}{Cidade}} $>$ \mbox{\hyperlink{class_geral_a986b33339cf13698ad0980f6d5afe6db}{getcidades}} () const
+\begin{DoxyCompactList}\small\item\em Retorna o mapa de objetos da classe \mbox{\hyperlink{class_cidade}{Cidade}} armazenados na classe \mbox{\hyperlink{class_geral}{Geral}}, com a string do nome da cidade como chave. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_geral_a0ca8147157c0a7b6d97aa3baf6fff599}{get\+Shortest\+Paths}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o caminho mais curto entre dois locais escolhidos pelo usuário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_geral_a04a38126f28bde32dee08760777e97fa}{estatisticas\+Globais}} ()
+\begin{DoxyCompactList}\small\item\em Calcula estatísticas globais sobre um país, companhia aérea ou voos. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_geral_a647f4c8911d342119c55982d56a42518}{numvoos}} (const string \&codigoaeroporto)
+\begin{DoxyCompactList}\small\item\em Retorna o número de voos partindo do aeroporto com o código especificado. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_geral_a5bf6db1ed696e60a623c467f451decc2}{numvoosairline}} (const string \&codigoaeroporto)
+\begin{DoxyCompactList}\small\item\em Retorna o número de voos de cada companhia aérea partindo do aeroporto com o código especificado. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_geral_a85e05b20f1e4f04f14d974966da79d89}{numvoosdestino}} (const string \&codigoaeroporto)
+\begin{DoxyCompactList}\small\item\em Retorna o número de destinos diferentes para os quais há voos partindo do aeroporto com o código especificado. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{class_geral_afbffc2bb467eaddfc16385a26d0423b2}{numvoospais}} (const string \&codigoaeroporto)
+\begin{DoxyCompactList}\small\item\em Retorna o número de países diferentes para os quais há voos partindo do aeroporto com o código especificado. \end{DoxyCompactList}\item 
+vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{class_geral_a41c0bb6da0497604cafc227eeb22f41f}{nummaxvoos}} (const string \&codigoaeroporto, int y)
+\begin{DoxyCompactList}\small\item\em Retorna um vetor com o número de aeroportos, cidades e países alcançáveis a partir do aeroporto com o código especificado, com viagens de no máximo y etapas. \end{DoxyCompactList}\item 
+list$<$ string $>$ \mbox{\hyperlink{class_geral_a0fd13b42dbb816b21a9db42b0b92519e}{articulation\+Points}} (const vector$<$ string $>$ \&airline)
+\begin{DoxyCompactList}\small\item\em Retorna uma lista com os códigos dos aeroportos que são pontos de articulação no grafo de voos, limitando a busca a voos da(s) companhia(s) aérea(s) especificada(s). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_geral_af4f8274b1a1d141ddb7a9d2bdffb7be5}{menuprincipal}} ()
+\begin{DoxyCompactList}\small\item\em Exibe o menu principal do programa e permite ao utilizador escolher uma das opções disponíveis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_geral_a0a0064df2348319e78f7ddb0806fd14f}{voltarmenu}} ()
+\begin{DoxyCompactList}\small\item\em Volta para o menu principal Esta função é utilizada para retornar ao menu principal após a realização de uma operação. Ela solicita ao usuário que pressione \char`\"{}\+V\char`\"{} para retornar ao menu principal. Se o usuário inserir qualquer outro caractere, a função é chamada novamente até que o usuário insira \char`\"{}\+V\char`\"{} corretamente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_aeroporto}{Aeroporto}} $>$ \mbox{\hyperlink{class_geral_a0dc75f9e247f704b49686b2ef307290f}{aeroportos}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_geral_ac2f752a78abdbd6bd388b8c7565ac4ac}{display\+Shortest\+Paths}} (const vector$<$ vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ \&shortest\+Paths)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph}{Graph}} \mbox{\hyperlink{class_geral_a7145a77703cdc6082b340436d7cd775d}{info}} = \mbox{\hyperlink{class_graph}{Graph}}(3019, true)
+\begin{DoxyCompactList}\small\item\em Grafo que representa a rede de voos. O grafo tem 3019 vértices e é direcionado. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_airline}{Airline}} $>$ \mbox{\hyperlink{class_geral_a6f0bcdde7c2480f2beeb285af075398c}{airlines}}
+\begin{DoxyCompactList}\small\item\em Vetor de estruturas de dados que armazenam informações sobre as companhias aéreas. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ string $>$ \mbox{\hyperlink{class_geral_a2a8e0c988681bc794332df34f6245b75}{airline\+Codes}}
+\begin{DoxyCompactList}\small\item\em Conjunto de códigos de companhias aéreas. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ string $>$ \mbox{\hyperlink{class_geral_a2186e3bfa558bcd3404ed5282dd822ab}{airline\+Names}}
+\begin{DoxyCompactList}\small\item\em Conjunto de nomes de companhias aéreas. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ \mbox{\hyperlink{class_geral_ab42c987ccccfd6adf29e58b5b903f4e2}{voos}}
+\begin{DoxyCompactList}\small\item\em Vetor de estruturas de dados que armazenam informações sobre os voos. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ string, \mbox{\hyperlink{class_cidade}{Cidade}} $>$ \mbox{\hyperlink{class_geral_ae2b2f3cb9261eb1628b29628c4bd5ca9}{cidades}}
+\begin{DoxyCompactList}\small\item\em Mapa que mapeia os nomes das cidades para as estruturas de dados que armazenam informações sobre elas. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ string $>$ \mbox{\hyperlink{class_geral_a72c2e980148e931d6cfdd86989e4e2b1}{paises}}
+\begin{DoxyCompactList}\small\item\em Conjunto de nomes de países. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_geral_a4361a2b6782a2ad02eaeeecc2984aaf6}\label{class_geral_a4361a2b6782a2ad02eaeeecc2984aaf6}} 
+\index{Geral@{Geral}!Geral@{Geral}}
+\index{Geral@{Geral}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{Geral()}{Geral()}}
+{\footnotesize\ttfamily Geral\+::\+Geral (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_geral_a0fd13b42dbb816b21a9db42b0b92519e}\label{class_geral_a0fd13b42dbb816b21a9db42b0b92519e}} 
+\index{Geral@{Geral}!articulationPoints@{articulationPoints}}
+\index{articulationPoints@{articulationPoints}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{articulationPoints()}{articulationPoints()}}
+{\footnotesize\ttfamily list$<$ string $>$ Geral\+::articulation\+Points (\begin{DoxyParamCaption}\item[{const vector$<$ string $>$ \&}]{airline }\end{DoxyParamCaption})}
+
+
+
+Retorna uma lista com os códigos dos aeroportos que são pontos de articulação no grafo de voos, limitando a busca a voos da(s) companhia(s) aérea(s) especificada(s). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em airline} & Vetor com os códigos das companhias aéreas para as quais se deseja limitar a busca de pontos de articulação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+list 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a0fd13b42dbb816b21a9db42b0b92519e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a0fd13b42dbb816b21a9db42b0b92519e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_ac2f752a78abdbd6bd388b8c7565ac4ac}\label{class_geral_ac2f752a78abdbd6bd388b8c7565ac4ac}} 
+\index{Geral@{Geral}!displayShortestPaths@{displayShortestPaths}}
+\index{displayShortestPaths@{displayShortestPaths}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{displayShortestPaths()}{displayShortestPaths()}}
+{\footnotesize\ttfamily void Geral\+::display\+Shortest\+Paths (\begin{DoxyParamCaption}\item[{const vector$<$ vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ \&}]{shortest\+Paths }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_ac2f752a78abdbd6bd388b8c7565ac4ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a04a38126f28bde32dee08760777e97fa}\label{class_geral_a04a38126f28bde32dee08760777e97fa}} 
+\index{Geral@{Geral}!estatisticasGlobais@{estatisticasGlobais}}
+\index{estatisticasGlobais@{estatisticasGlobais}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{estatisticasGlobais()}{estatisticasGlobais()}}
+{\footnotesize\ttfamily void Geral\+::estatisticas\+Globais (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calcula estatísticas globais sobre um país, companhia aérea ou voos. 
+
+Esta função permite que o usuário escolha entre três tipos de entidades\+: países, companhias aéreas ou voos. Em seguida, o usuário deve inserir o nome de um país ou a sigla de uma companhia aérea. A função exibe uma lista de opções de estatísticas a serem calculadas e o usuário deve escolher uma. As opções incluem o número de aeroportos, voos ou companhias aéreas em um país, o diâmetro da rede de voos de um país, ou o top-\/k de aeroportos ou companhias aéreas com o maior número de voos em um país. Se a entidade escolhida for uma companhia aérea, a função também exibe informações sobre os voos da companhia. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a04a38126f28bde32dee08760777e97fa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a04a38126f28bde32dee08760777e97fa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a8e82c5d1cf114006c5185a1dbe735a84}\label{class_geral_a8e82c5d1cf114006c5185a1dbe735a84}} 
+\index{Geral@{Geral}!getairlines@{getairlines}}
+\index{getairlines@{getairlines}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{getairlines()}{getairlines()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_airline}{Airline}} $>$ Geral\+::getairlines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o vetor de objetos da classe \mbox{\hyperlink{class_airline}{Airline}} armazenados na classe \mbox{\hyperlink{class_geral}{Geral}}. 
+
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_geral_a986b33339cf13698ad0980f6d5afe6db}\label{class_geral_a986b33339cf13698ad0980f6d5afe6db}} 
+\index{Geral@{Geral}!getcidades@{getcidades}}
+\index{getcidades@{getcidades}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{getcidades()}{getcidades()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ string, \mbox{\hyperlink{class_cidade}{Cidade}} $>$ Geral\+::getcidades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o mapa de objetos da classe \mbox{\hyperlink{class_cidade}{Cidade}} armazenados na classe \mbox{\hyperlink{class_geral}{Geral}}, com a string do nome da cidade como chave. 
+
+\begin{DoxyReturn}{Returns}
+unordered\+\_\+map 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_geral_a0ca8147157c0a7b6d97aa3baf6fff599}\label{class_geral_a0ca8147157c0a7b6d97aa3baf6fff599}} 
+\index{Geral@{Geral}!getShortestPaths@{getShortestPaths}}
+\index{getShortestPaths@{getShortestPaths}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{getShortestPaths()}{getShortestPaths()}}
+{\footnotesize\ttfamily void Geral\+::get\+Shortest\+Paths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém o caminho mais curto entre dois locais escolhidos pelo usuário. 
+
+Esta função permite que o usuário escolha entre três tipos de locais\+: aeroportos, cidades ou coordenadas geográficas. Em seguida, o usuário deve inserir os dois locais de partida e chegada. A função encontra o caminho mais curto entre os aeroportos correspondentes aos locais inserido usando os algoritmos implementados na class \mbox{\hyperlink{class_graph}{Graph}} de pesquisa em largura e, opcionalmente, filtra as rotas pelas companhias aéreas escolhidas pelo usuário. Finalmente, a função exibe o caminho mais curto encontrado e as informações de cada voo na rota. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a0ca8147157c0a7b6d97aa3baf6fff599_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a0ca8147157c0a7b6d97aa3baf6fff599_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a62a34dabfa96e07a0c6e51e0d3e3671d}\label{class_geral_a62a34dabfa96e07a0c6e51e0d3e3671d}} 
+\index{Geral@{Geral}!getvoos@{getvoos}}
+\index{getvoos@{getvoos}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{getvoos()}{getvoos()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ Geral\+::getvoos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retorna o vetor de objetos da classe \mbox{\hyperlink{class_voo}{Voo}} armazenados na classe \mbox{\hyperlink{class_geral}{Geral}}. 
+
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_geral_a35d59d7468951859fff79cfc9d7641ab}\label{class_geral_a35d59d7468951859fff79cfc9d7641ab}} 
+\index{Geral@{Geral}!leraeroportos@{leraeroportos}}
+\index{leraeroportos@{leraeroportos}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{leraeroportos()}{leraeroportos()}}
+{\footnotesize\ttfamily void Geral\+::leraeroportos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê os dados de aeroportos de um arquivo CSV e armazena em um vetor de \mbox{\hyperlink{class_aeroporto}{Aeroporto}}. 
+
+Esta função lê o arquivo \char`\"{}../dados/airports.\+csv\char`\"{}, usando a classe \mbox{\hyperlink{class_csv_leitor}{Csv\+Leitor}} para obter as linhas do arquivo em formato de vetor de \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}}. Em seguida, cria um objeto \mbox{\hyperlink{class_coordenadas}{Coordenadas}} com as coordenadas geográficas de cada aeroporto e um objeto \mbox{\hyperlink{class_aeroporto}{Aeroporto}} com as informações da linha. Adiciona cada objeto \mbox{\hyperlink{class_aeroporto}{Aeroporto}} no vetor de \mbox{\hyperlink{class_aeroporto}{Aeroporto}} e também adiciona o país de cada aeroporto a um conjunto de países. Além disso, adiciona o aeroporto à cidade correspondente em uma hashtable de \mbox{\hyperlink{class_cidade}{Cidade}}, ou cria uma nova \mbox{\hyperlink{class_cidade}{Cidade}} se ainda não existir na hashtable. Finalmente, adiciona o aeroporto ao grafo info. @\+Complexity A complexidade deste codigo é O(n), onde n representa o numero de linhas do ficheiro airports.\+csv. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a35d59d7468951859fff79cfc9d7641ab_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_geral_a35d59d7468951859fff79cfc9d7641ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a86884c7e8d6abb93c1a475fed43e11fb}\label{class_geral_a86884c7e8d6abb93c1a475fed43e11fb}} 
+\index{Geral@{Geral}!lerairlines@{lerairlines}}
+\index{lerairlines@{lerairlines}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{lerairlines()}{lerairlines()}}
+{\footnotesize\ttfamily void Geral\+::lerairlines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê os dados de companhias aéreas de um arquivo CSV e armazena em um vetor de \mbox{\hyperlink{class_airline}{Airline}}. 
+
+Esta função lê o arquivo \char`\"{}../dados/airlines.\+csv\char`\"{}, usando a classe \mbox{\hyperlink{class_csv_leitor}{Csv\+Leitor}} para obter as linhas do arquivo em formato de vetor de \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}}. Em seguida, cria um objeto \mbox{\hyperlink{class_airline}{Airline}} para cada linha e adiciona no vetor de \mbox{\hyperlink{class_airline}{Airline}}. Além disso, adiciona o código e o nome de cada companhia aérea em conjuntos específicos. @\+Complexity A complexidade deste codigo é O(n), onde n representa o numero de linhas do ficheiro airlines.\+csv. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a86884c7e8d6abb93c1a475fed43e11fb_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_geral_a86884c7e8d6abb93c1a475fed43e11fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a1170df32093bfd23b805ca89f4022029}\label{class_geral_a1170df32093bfd23b805ca89f4022029}} 
+\index{Geral@{Geral}!lervoos@{lervoos}}
+\index{lervoos@{lervoos}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{lervoos()}{lervoos()}}
+{\footnotesize\ttfamily void Geral\+::lervoos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Lê os dados de voo de um arquivo CSV e armazena em um vetor de \mbox{\hyperlink{class_voo}{Voo}}. 
+
+Esta função lê o arquivo \char`\"{}../dados/flights.\+csv\char`\"{}, usando a classe \mbox{\hyperlink{class_csv_leitor}{Csv\+Leitor}} para obter as linhas do arquivo em formato de vetor de \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}}. Em seguida, cria um objeto \mbox{\hyperlink{class_voo}{Voo}} para cada linha e adiciona no vetor de \mbox{\hyperlink{class_voo}{Voo}}. Além disso, adiciona as informações de cada voo no grafo info. @\+Complexity A complexidade deste codigo é O(n), onde n representa o numero de linhas do ficheiro flights.\+csv . \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a1170df32093bfd23b805ca89f4022029_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_geral_a1170df32093bfd23b805ca89f4022029_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_af4f8274b1a1d141ddb7a9d2bdffb7be5}\label{class_geral_af4f8274b1a1d141ddb7a9d2bdffb7be5}} 
+\index{Geral@{Geral}!menuprincipal@{menuprincipal}}
+\index{menuprincipal@{menuprincipal}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{menuprincipal()}{menuprincipal()}}
+{\footnotesize\ttfamily void Geral\+::menuprincipal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exibe o menu principal do programa e permite ao utilizador escolher uma das opções disponíveis. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_af4f8274b1a1d141ddb7a9d2bdffb7be5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_af4f8274b1a1d141ddb7a9d2bdffb7be5_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a41c0bb6da0497604cafc227eeb22f41f}\label{class_geral_a41c0bb6da0497604cafc227eeb22f41f}} 
+\index{Geral@{Geral}!nummaxvoos@{nummaxvoos}}
+\index{nummaxvoos@{nummaxvoos}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{nummaxvoos()}{nummaxvoos()}}
+{\footnotesize\ttfamily vector$<$ size\+\_\+t $>$ Geral\+::nummaxvoos (\begin{DoxyParamCaption}\item[{const string \&}]{codigoaeroporto,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Retorna um vetor com o número de aeroportos, cidades e países alcançáveis a partir do aeroporto com o código especificado, com viagens de no máximo y etapas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigoaeroporto} & O código do aeroporto a partir do qual se deseja contar o número de aeroportos, cidades e países alcançáveis. \\
+\hline
+{\em y} & O número máximo de etapas permitido nas viagens. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a41c0bb6da0497604cafc227eeb22f41f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a41c0bb6da0497604cafc227eeb22f41f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a647f4c8911d342119c55982d56a42518}\label{class_geral_a647f4c8911d342119c55982d56a42518}} 
+\index{Geral@{Geral}!numvoos@{numvoos}}
+\index{numvoos@{numvoos}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{numvoos()}{numvoos()}}
+{\footnotesize\ttfamily size\+\_\+t Geral\+::numvoos (\begin{DoxyParamCaption}\item[{const string \&}]{codigoaeroporto }\end{DoxyParamCaption})}
+
+
+
+Retorna o número de voos partindo do aeroporto com o código especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigoaeroporto} & O código do aeroporto para o qual se deseja contar o número de voos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a647f4c8911d342119c55982d56a42518_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a5bf6db1ed696e60a623c467f451decc2}\label{class_geral_a5bf6db1ed696e60a623c467f451decc2}} 
+\index{Geral@{Geral}!numvoosairline@{numvoosairline}}
+\index{numvoosairline@{numvoosairline}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{numvoosairline()}{numvoosairline()}}
+{\footnotesize\ttfamily size\+\_\+t Geral\+::numvoosairline (\begin{DoxyParamCaption}\item[{const string \&}]{codigoaeroporto }\end{DoxyParamCaption})}
+
+
+
+Retorna o número de voos de cada companhia aérea partindo do aeroporto com o código especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigoaeroporto} & O código do aeroporto para o qual se deseja contar o número de voos de cada companhia aérea. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a5bf6db1ed696e60a623c467f451decc2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a85e05b20f1e4f04f14d974966da79d89}\label{class_geral_a85e05b20f1e4f04f14d974966da79d89}} 
+\index{Geral@{Geral}!numvoosdestino@{numvoosdestino}}
+\index{numvoosdestino@{numvoosdestino}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{numvoosdestino()}{numvoosdestino()}}
+{\footnotesize\ttfamily size\+\_\+t Geral\+::numvoosdestino (\begin{DoxyParamCaption}\item[{const string \&}]{codigoaeroporto }\end{DoxyParamCaption})}
+
+
+
+Retorna o número de destinos diferentes para os quais há voos partindo do aeroporto com o código especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigoaeroporto} & O código do aeroporto para o qual se deseja contar o número de destinos diferentes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a85e05b20f1e4f04f14d974966da79d89_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_afbffc2bb467eaddfc16385a26d0423b2}\label{class_geral_afbffc2bb467eaddfc16385a26d0423b2}} 
+\index{Geral@{Geral}!numvoospais@{numvoospais}}
+\index{numvoospais@{numvoospais}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{numvoospais()}{numvoospais()}}
+{\footnotesize\ttfamily size\+\_\+t Geral\+::numvoospais (\begin{DoxyParamCaption}\item[{const string \&}]{codigoaeroporto }\end{DoxyParamCaption})}
+
+
+
+Retorna o número de países diferentes para os quais há voos partindo do aeroporto com o código especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em codigoaeroporto} & O código do aeroporto para o qual se deseja contar o número de países diferentes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_afbffc2bb467eaddfc16385a26d0423b2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_geral_a0a0064df2348319e78f7ddb0806fd14f}\label{class_geral_a0a0064df2348319e78f7ddb0806fd14f}} 
+\index{Geral@{Geral}!voltarmenu@{voltarmenu}}
+\index{voltarmenu@{voltarmenu}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{voltarmenu()}{voltarmenu()}}
+{\footnotesize\ttfamily void Geral\+::voltarmenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Volta para o menu principal Esta função é utilizada para retornar ao menu principal após a realização de uma operação. Ela solicita ao usuário que pressione \char`\"{}\+V\char`\"{} para retornar ao menu principal. Se o usuário inserir qualquer outro caractere, a função é chamada novamente até que o usuário insira \char`\"{}\+V\char`\"{} corretamente. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a0a0064df2348319e78f7ddb0806fd14f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_geral_a0a0064df2348319e78f7ddb0806fd14f_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_geral_a0dc75f9e247f704b49686b2ef307290f}\label{class_geral_a0dc75f9e247f704b49686b2ef307290f}} 
+\index{Geral@{Geral}!aeroportos@{aeroportos}}
+\index{aeroportos@{aeroportos}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{aeroportos}{aeroportos}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_aeroporto}{Aeroporto}}$>$ Geral\+::aeroportos}
+
+\mbox{\Hypertarget{class_geral_a2a8e0c988681bc794332df34f6245b75}\label{class_geral_a2a8e0c988681bc794332df34f6245b75}} 
+\index{Geral@{Geral}!airlineCodes@{airlineCodes}}
+\index{airlineCodes@{airlineCodes}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{airlineCodes}{airlineCodes}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$string$>$ Geral\+::airline\+Codes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Conjunto de códigos de companhias aéreas. 
+
+\mbox{\Hypertarget{class_geral_a2186e3bfa558bcd3404ed5282dd822ab}\label{class_geral_a2186e3bfa558bcd3404ed5282dd822ab}} 
+\index{Geral@{Geral}!airlineNames@{airlineNames}}
+\index{airlineNames@{airlineNames}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{airlineNames}{airlineNames}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$string$>$ Geral\+::airline\+Names\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Conjunto de nomes de companhias aéreas. 
+
+\mbox{\Hypertarget{class_geral_a6f0bcdde7c2480f2beeb285af075398c}\label{class_geral_a6f0bcdde7c2480f2beeb285af075398c}} 
+\index{Geral@{Geral}!airlines@{airlines}}
+\index{airlines@{airlines}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{airlines}{airlines}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_airline}{Airline}}$>$ Geral\+::airlines\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vetor de estruturas de dados que armazenam informações sobre as companhias aéreas. 
+
+\mbox{\Hypertarget{class_geral_ae2b2f3cb9261eb1628b29628c4bd5ca9}\label{class_geral_ae2b2f3cb9261eb1628b29628c4bd5ca9}} 
+\index{Geral@{Geral}!cidades@{cidades}}
+\index{cidades@{cidades}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{cidades}{cidades}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$string, \mbox{\hyperlink{class_cidade}{Cidade}}$>$ Geral\+::cidades\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Mapa que mapeia os nomes das cidades para as estruturas de dados que armazenam informações sobre elas. 
+
+\mbox{\Hypertarget{class_geral_a7145a77703cdc6082b340436d7cd775d}\label{class_geral_a7145a77703cdc6082b340436d7cd775d}} 
+\index{Geral@{Geral}!info@{info}}
+\index{info@{info}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}} Geral\+::info = \mbox{\hyperlink{class_graph}{Graph}}(3019, true)\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Grafo que representa a rede de voos. O grafo tem 3019 vértices e é direcionado. 
+
+\mbox{\Hypertarget{class_geral_a72c2e980148e931d6cfdd86989e4e2b1}\label{class_geral_a72c2e980148e931d6cfdd86989e4e2b1}} 
+\index{Geral@{Geral}!paises@{paises}}
+\index{paises@{paises}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{paises}{paises}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$string$>$ Geral\+::paises\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Conjunto de nomes de países. 
+
+\mbox{\Hypertarget{class_geral_ab42c987ccccfd6adf29e58b5b903f4e2}\label{class_geral_ab42c987ccccfd6adf29e58b5b903f4e2}} 
+\index{Geral@{Geral}!voos@{voos}}
+\index{voos@{voos}!Geral@{Geral}}
+\doxysubsubsection{\texorpdfstring{voos}{voos}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_voo}{Voo}}$>$ Geral\+::voos\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vetor de estruturas de dados que armazenam informações sobre os voos. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/include/\mbox{\hyperlink{_geral_8h}{Geral.\+h}}\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/src/\mbox{\hyperlink{_geral_8cpp}{Geral.\+cpp}}\end{DoxyCompactItemize}

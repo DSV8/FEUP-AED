@@ -1,0 +1,12 @@
+# ninja log v5
+2	391	1666192669632068257	CMakeFiles/Project_1.dir/Estudante.cpp.o	7bea6d812f50e29d
+0	264	1665747011267069090	CMakeFiles/Project_1.dir/parse.cpp.o	5748bf8982e40c5d
+245	698	1666192669939069274	CMakeFiles/Project_1.dir/main.cpp.o	f67f31fa83993e54
+2	530	1666192669771068717	CMakeFiles/Project_1.dir/CsvReader.cpp.o	6da09bac428c9764
+0	37	1666195457428141327	build.ninja	14b519fa976b4099
+1	317	1666192669558068011	CMakeFiles/Project_1.dir/Horario.cpp.o	c0507cdaabb55179
+1	13	1665746401554825869	CMakeFiles/Project_1.dir/read.cpp.o	7b792a0dab2a3d5d
+3	505	1666192669746068635	CMakeFiles/Project_1.dir/CsvLine.cpp.o	94417ec73d282d2c
+1	245	1666192669486067773	CMakeFiles/Project_1.dir/Aula.cpp.o	75d609f3f32565a2
+2	303	1666192669544067965	CMakeFiles/Project_1.dir/Turma.cpp.o	8a3a1d2d12265d5b
+698	828	1666192670067069699	Project_1	cef5ca89f19b424

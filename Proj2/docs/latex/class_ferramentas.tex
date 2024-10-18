@@ -1,0 +1,107 @@
+\hypertarget{class_ferramentas}{}\doxysection{Ferramentas Class Reference}
+\label{class_ferramentas}\index{Ferramentas@{Ferramentas}}
+
+
+{\ttfamily \#include $<$Ferramentas.\+h$>$}
+
+
+
+Collaboration diagram for Ferramentas\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{class_ferramentas__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_ferramentas_adbe456a63261eaded4e97ee6957c4ed4}{calculatedistancecoords}} (\mbox{\hyperlink{class_coordenadas}{Coordenadas}} a, \mbox{\hyperlink{class_coordenadas}{Coordenadas}} b)
+\item 
+static double \mbox{\hyperlink{class_ferramentas_af10c5ae522db1625785acaf0658de66e}{calculatedistanceairports}} (const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&a, const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_ferramentas}{Ferramentas}}
+
+Esta classe fornece métodos estáticos para calcular a distância entre dois pontos e entre dois aeroportos. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ferramentas_af10c5ae522db1625785acaf0658de66e}\label{class_ferramentas_af10c5ae522db1625785acaf0658de66e}} 
+\index{Ferramentas@{Ferramentas}!calculatedistanceairports@{calculatedistanceairports}}
+\index{calculatedistanceairports@{calculatedistanceairports}!Ferramentas@{Ferramentas}}
+\doxysubsubsection{\texorpdfstring{calculatedistanceairports()}{calculatedistanceairports()}}
+{\footnotesize\ttfamily double Ferramentas\+::calculatedistanceairports (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calcula a distância entre dois aeroportos
+
+Esta função usa as coordenadas dos aeroportos para calcular a distância entre eles em metros.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & O primeiro aeroporto \\
+\hline
+{\em b} & O segundo aeroporto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ferramentas_af10c5ae522db1625785acaf0658de66e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ferramentas_af10c5ae522db1625785acaf0658de66e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ferramentas_adbe456a63261eaded4e97ee6957c4ed4}\label{class_ferramentas_adbe456a63261eaded4e97ee6957c4ed4}} 
+\index{Ferramentas@{Ferramentas}!calculatedistancecoords@{calculatedistancecoords}}
+\index{calculatedistancecoords@{calculatedistancecoords}!Ferramentas@{Ferramentas}}
+\doxysubsubsection{\texorpdfstring{calculatedistancecoords()}{calculatedistancecoords()}}
+{\footnotesize\ttfamily double Ferramentas\+::calculatedistancecoords (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{a,  }\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Esta função usa a fórmula Haversine para calcular a distância em metros entre duas coordenadas geográficas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{class_coordenadas}{Coordenadas}} da primeira posição \\
+\hline
+{\em b} & \mbox{\hyperlink{class_coordenadas}{Coordenadas}} da segunda posição \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ferramentas_adbe456a63261eaded4e97ee6957c4ed4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_ferramentas_adbe456a63261eaded4e97ee6957c4ed4_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/include/\mbox{\hyperlink{_ferramentas_8h}{Ferramentas.\+h}}\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/src/\mbox{\hyperlink{_ferramentas_8cpp}{Ferramentas.\+cpp}}\end{DoxyCompactItemize}

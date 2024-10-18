@@ -1,0 +1,235 @@
+\hypertarget{class_cidade}{}\doxysection{Cidade Class Reference}
+\label{class_cidade}\index{Cidade@{Cidade}}
+
+
+Classe que representa uma cidade.  
+
+
+
+
+{\ttfamily \#include $<$Cidade.\+h$>$}
+
+
+
+Collaboration diagram for Cidade\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{class_cidade__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cidade_ababf94ba57e773ea25cee7438dfd574b}{Cidade}} ()
+\item 
+\mbox{\hyperlink{class_cidade_abbd2f46fe731dab9085eadf0acf9450d}{Cidade}} (std\+::string nome\+\_\+, std\+::string pais\+\_\+)
+\item 
+void \mbox{\hyperlink{class_cidade_ae470f4bd059433442c41682bbcd12381}{addaeroporto}} (const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&ap)
+\begin{DoxyCompactList}\small\item\em Adiciona um aeroporto à cidade. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_cidade_ae1d2a5270170c303dbf8747ea254f0fc}{operator==}} (const \mbox{\hyperlink{class_cidade}{Cidade}} \&city) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de igualdade. Verifica se duas cidades são iguais, comparando seus nomes. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_cidade_afcb41d950531f5a62bba77c390e61858}{getnome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome da cidade. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_cidade_a9baa9e984463d24d4062fbd99290920b}{getpais}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o país onde a cidade está localizada. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_aeroporto}{Aeroporto}} $>$ \mbox{\hyperlink{class_cidade_ae6cba8f4b488357e67d723c86cd8f39b}{getaeroportos}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a lista de aeroportos da cidade. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_cidade_a0a46935eafb5137c84d52384455124e9}{nome}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_aeroporto}{Aeroporto}} $>$ \mbox{\hyperlink{class_cidade_a12bff5e3029f9ede1888edfabbd58c71}{aeroportos}}
+\item 
+std\+::string \mbox{\hyperlink{class_cidade_aac80c3b75018a10e4737898b4f3fa235}{pais}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_cidade_addd674450c02da0e1604ce214e994cee}{operator$<$}} (const \mbox{\hyperlink{class_cidade}{Cidade}} \&left, const \mbox{\hyperlink{class_cidade}{Cidade}} \&right)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de menor. Compara duas cidades pelo nome, de forma alfabética. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa uma cidade. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cidade_ababf94ba57e773ea25cee7438dfd574b}\label{class_cidade_ababf94ba57e773ea25cee7438dfd574b}} 
+\index{Cidade@{Cidade}!Cidade@{Cidade}}
+\index{Cidade@{Cidade}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{Cidade()}{Cidade()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cidade\+::\+Cidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_cidade_abbd2f46fe731dab9085eadf0acf9450d}\label{class_cidade_abbd2f46fe731dab9085eadf0acf9450d}} 
+\index{Cidade@{Cidade}!Cidade@{Cidade}}
+\index{Cidade@{Cidade}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{Cidade()}{Cidade()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cidade\+::\+Cidade (\begin{DoxyParamCaption}\item[{std\+::string}]{nome\+\_\+,  }\item[{std\+::string}]{pais\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cidade_ae470f4bd059433442c41682bbcd12381}\label{class_cidade_ae470f4bd059433442c41682bbcd12381}} 
+\index{Cidade@{Cidade}!addaeroporto@{addaeroporto}}
+\index{addaeroporto@{addaeroporto}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{addaeroporto()}{addaeroporto()}}
+{\footnotesize\ttfamily void Cidade\+::addaeroporto (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&}]{ap }\end{DoxyParamCaption})}
+
+
+
+Adiciona um aeroporto à cidade. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ap} & O aeroporto a ser adicionado. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cidade_ae470f4bd059433442c41682bbcd12381_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cidade_ae6cba8f4b488357e67d723c86cd8f39b}\label{class_cidade_ae6cba8f4b488357e67d723c86cd8f39b}} 
+\index{Cidade@{Cidade}!getaeroportos@{getaeroportos}}
+\index{getaeroportos@{getaeroportos}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{getaeroportos()}{getaeroportos()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_aeroporto}{Aeroporto}} $>$ Cidade\+::getaeroportos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a lista de aeroportos da cidade. 
+
+\begin{DoxyReturn}{Returns}
+A lista de aeroportos da cidade. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cidade_ae6cba8f4b488357e67d723c86cd8f39b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cidade_afcb41d950531f5a62bba77c390e61858}\label{class_cidade_afcb41d950531f5a62bba77c390e61858}} 
+\index{Cidade@{Cidade}!getnome@{getnome}}
+\index{getnome@{getnome}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{getnome()}{getnome()}}
+{\footnotesize\ttfamily std\+::string Cidade\+::getnome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o nome da cidade. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_cidade_afcb41d950531f5a62bba77c390e61858_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cidade_a9baa9e984463d24d4062fbd99290920b}\label{class_cidade_a9baa9e984463d24d4062fbd99290920b}} 
+\index{Cidade@{Cidade}!getpais@{getpais}}
+\index{getpais@{getpais}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{getpais()}{getpais()}}
+{\footnotesize\ttfamily std\+::string Cidade\+::getpais (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o país onde a cidade está localizada. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_cidade_a9baa9e984463d24d4062fbd99290920b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cidade_ae1d2a5270170c303dbf8747ea254f0fc}\label{class_cidade_ae1d2a5270170c303dbf8747ea254f0fc}} 
+\index{Cidade@{Cidade}!operator==@{operator==}}
+\index{operator==@{operator==}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Cidade\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cidade}{Cidade}} \&}]{city }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga do operador de igualdade. Verifica se duas cidades são iguais, comparando seus nomes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & A outra cidade a ser comparada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se as duas cidades têm o mesmo nome, false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_cidade_ae1d2a5270170c303dbf8747ea254f0fc_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_cidade_addd674450c02da0e1604ce214e994cee}\label{class_cidade_addd674450c02da0e1604ce214e994cee}} 
+\index{Cidade@{Cidade}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{operator$<$}{operator<}}
+{\footnotesize\ttfamily bool operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cidade}{Cidade}} \&}]{left,  }\item[{const \mbox{\hyperlink{class_cidade}{Cidade}} \&}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga do operador de menor. Compara duas cidades pelo nome, de forma alfabética. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & A primeira cidade a ser comparada. \\
+\hline
+{\em right} & A segunda cidade a ser comparada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se a primeira cidade tem nome \char`\"{}menor\char`\"{} que a segunda, false caso contrário. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_cidade_a12bff5e3029f9ede1888edfabbd58c71}\label{class_cidade_a12bff5e3029f9ede1888edfabbd58c71}} 
+\index{Cidade@{Cidade}!aeroportos@{aeroportos}}
+\index{aeroportos@{aeroportos}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{aeroportos}{aeroportos}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{class_aeroporto}{Aeroporto}}$>$ Cidade\+::aeroportos\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cidade_a0a46935eafb5137c84d52384455124e9}\label{class_cidade_a0a46935eafb5137c84d52384455124e9}} 
+\index{Cidade@{Cidade}!nome@{nome}}
+\index{nome@{nome}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily std\+::string Cidade\+::nome\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_cidade_aac80c3b75018a10e4737898b4f3fa235}\label{class_cidade_aac80c3b75018a10e4737898b4f3fa235}} 
+\index{Cidade@{Cidade}!pais@{pais}}
+\index{pais@{pais}!Cidade@{Cidade}}
+\doxysubsubsection{\texorpdfstring{pais}{pais}}
+{\footnotesize\ttfamily std\+::string Cidade\+::pais\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/include/\mbox{\hyperlink{_cidade_8h}{Cidade.\+h}}\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/src/\mbox{\hyperlink{_cidade_8cpp}{Cidade.\+cpp}}\end{DoxyCompactItemize}

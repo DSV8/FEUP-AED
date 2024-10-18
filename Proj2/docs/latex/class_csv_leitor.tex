@@ -1,0 +1,100 @@
+\hypertarget{class_csv_leitor}{}\doxysection{Csv\+Leitor Class Reference}
+\label{class_csv_leitor}\index{CsvLeitor@{CsvLeitor}}
+
+
+Classe que lê um arquivo CSV (Comma Separated Values) e armazena os valores em um vetor de \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}}.  
+
+
+
+
+{\ttfamily \#include $<$Csv\+Leitor.\+h$>$}
+
+
+
+Collaboration diagram for Csv\+Leitor\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{class_csv_leitor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_csv_leitor_a09f83bf342d15f8d96fc30ac4aed1784}{Csv\+Leitor}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} $>$ \mbox{\hyperlink{class_csv_leitor_a8dad5de8334527ef89439b3a7d4a8847}{ler}} (const std\+::string \&nome\+Ficheiro, bool tem\+Cabecalho=false)
+\begin{DoxyCompactList}\small\item\em Lê o arquivo CSV especificado e armazena os valores em um vetor de \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que lê um arquivo CSV (Comma Separated Values) e armazena os valores em um vetor de \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_csv_leitor_a09f83bf342d15f8d96fc30ac4aed1784}\label{class_csv_leitor_a09f83bf342d15f8d96fc30ac4aed1784}} 
+\index{CsvLeitor@{CsvLeitor}!CsvLeitor@{CsvLeitor}}
+\index{CsvLeitor@{CsvLeitor}!CsvLeitor@{CsvLeitor}}
+\doxysubsubsection{\texorpdfstring{CsvLeitor()}{CsvLeitor()}}
+{\footnotesize\ttfamily Csv\+Leitor\+::\+Csv\+Leitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_csv_leitor_a8dad5de8334527ef89439b3a7d4a8847}\label{class_csv_leitor_a8dad5de8334527ef89439b3a7d4a8847}} 
+\index{CsvLeitor@{CsvLeitor}!ler@{ler}}
+\index{ler@{ler}!CsvLeitor@{CsvLeitor}}
+\doxysubsubsection{\texorpdfstring{ler()}{ler()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} $>$ Csv\+Leitor\+::ler (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{nome\+Ficheiro,  }\item[{bool}]{tem\+Cabecalho = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Lê o arquivo CSV especificado e armazena os valores em um vetor de \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}}. 
+
+Lê as linhas de um arquivo CSV.
+
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Ficheiro} & O nome do arquivo CSV a ser lido. \\
+\hline
+{\em tem\+Cabecalho} & Indica se o arquivo possui um cabeçalho que deve ser ignorado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+O vetor de \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} com os valores do arquivo CSV.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em nome\+Ficheiro} & O nome do arquivo a ser lido. \\
+\hline
+{\em tem\+Cabecalho} & Indica se o arquivo tem cabeçalho. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_csv_leitor_a8dad5de8334527ef89439b3a7d4a8847_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_csv_leitor_a8dad5de8334527ef89439b3a7d4a8847_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/include/\mbox{\hyperlink{_csv_leitor_8h}{Csv\+Leitor.\+h}}\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/src/\mbox{\hyperlink{_csv_leitor_8cpp}{Csv\+Leitor.\+cpp}}\end{DoxyCompactItemize}

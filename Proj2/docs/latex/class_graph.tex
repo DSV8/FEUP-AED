@@ -1,0 +1,437 @@
+\hypertarget{class_graph}{}\doxysection{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+
+
+Collaboration diagram for Graph\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_graph__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_graph_1_1_edge}{Edge}}
+\item 
+struct \mbox{\hyperlink{struct_graph_1_1_node}{Node}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph_a18b4f6dec368300991b68dd75e39a5e9}{Graph}} (int \mbox{\hyperlink{class_graph_a52d5d86990e452a09d9404d4eed03075}{nodes}}, bool dir=false)
+\item 
+void \mbox{\hyperlink{class_graph_ae195d264a640713a5a3b193c79325446}{add\+Node}} (const string \&key, \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&airport)
+\begin{DoxyCompactList}\small\item\em Adiciona um nó ao grafo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_ac6074ee41e491063dd763406ced69164}{add\+Edge}} (string \&aeroporto\+\_\+origem, string \&aeroporto\+\_\+destino, string \&airline)
+\begin{DoxyCompactList}\small\item\em Adiciona uma aresta ao grafo. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ \mbox{\hyperlink{class_graph_a58b2134bf5fa76fb6ce5ab68baa8d0e2}{shortest\+Paths}} (const string \&start\+Node\+Key, const string \&end\+Node\+Key, const unordered\+\_\+set$<$ string $>$ \&airlines)
+\begin{DoxyCompactList}\small\item\em Calcula os caminhos mais curtos entre os nós de origem e destino, considerando apenas as companhias aéreas especificadas. @\+Complexity O(V+\+E+n) V\+: numero de nodes, E\+: numero de edges, numero total de paths construidos em build\+Paths. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_graph_a846fb7b8e3483c7f8f49b5a4bc88cf40}{restart}} ()
+\item 
+void \mbox{\hyperlink{class_graph_a69783a9e571ad1645dcff1b5488ccdb0}{dfs}} (const string \&v)
+\item 
+void \mbox{\hyperlink{class_graph_adb397499f22bc2558c264356fdd2a978}{bfs}} (const string \&v)
+\item 
+void \mbox{\hyperlink{class_graph_af8d54d72caf961cce6734886e35f8560}{dfs\+\_\+articulation\+\_\+points}} (const string \&v, int \&order, list$<$ string $>$ \&l, vector$<$ string $>$ airline)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_graph_a81a76a428e630453ef019a15b9092967}{n}}
+\begin{DoxyCompactList}\small\item\em Tamanho do grafo (os vértices são numerados de 1 a n). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_graph_a60baa846929049c84b7e50ffb5f401e8}{has\+Dir}}
+\begin{DoxyCompactList}\small\item\em Indica se o grafo é direcionado ou não. Se false, o grafo é não direcionado. Se true, o grafo é direcionado. \end{DoxyCompactList}\item 
+unordered\+\_\+map$<$ string, \mbox{\hyperlink{struct_graph_1_1_node}{Node}} $>$ \mbox{\hyperlink{class_graph_a52d5d86990e452a09d9404d4eed03075}{nodes}}
+\begin{DoxyCompactList}\small\item\em Mapa que mapeia os nomes dos aeroportos para os nós correspondentes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_graph_ad822b5e8b10da2ed7bc6300ee46f52f4}{distance\+BFS}} (const string \&v)
+\item 
+unordered\+\_\+map$<$ string, vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ \mbox{\hyperlink{class_graph_a1030048180587b2cbdc72f123968e909}{get\+Parents}} (const string \&start\+Node\+Key, const string \&end\+Node\+Key, const unordered\+\_\+set$<$ string $>$ \&airlines)
+\item 
+void \mbox{\hyperlink{class_graph_a903f8a5713f191e86568b347d8f21945}{build\+Paths}} (unordered\+\_\+map$<$ string, vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ \&parents, vector$<$ vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ \&paths, vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ \&curr\+Path, const string \&p, const string \&destination)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_graph_a18b4f6dec368300991b68dd75e39a5e9}\label{class_graph_a18b4f6dec368300991b68dd75e39a5e9}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{Graph()}{Graph()}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{int}]{nodes,  }\item[{bool}]{dir = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_ac6074ee41e491063dd763406ced69164}\label{class_graph_ac6074ee41e491063dd763406ced69164}} 
+\index{Graph@{Graph}!addEdge@{addEdge}}
+\index{addEdge@{addEdge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addEdge()}{addEdge()}}
+{\footnotesize\ttfamily void Graph\+::add\+Edge (\begin{DoxyParamCaption}\item[{string \&}]{aeroporto\+\_\+origem,  }\item[{string \&}]{aeroporto\+\_\+destino,  }\item[{string \&}]{airline }\end{DoxyParamCaption})}
+
+
+
+Adiciona uma aresta ao grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aeroporto\+\_\+origem} & \mbox{\hyperlink{class_aeroporto}{Aeroporto}} de origem da aresta. \\
+\hline
+{\em aeroporto\+\_\+destino} & \mbox{\hyperlink{class_aeroporto}{Aeroporto}} de destino da aresta. \\
+\hline
+{\em airline} & Companhia aérea responsável pela rota.\\
+\hline
+\end{DoxyParams}
+Adiciona uma aresta ao grafo, representando uma rota aérea entre dois aeroportos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em aeroporto\+\_\+origem} & Chave do nó de origem (aeroporto). \\
+\hline
+{\em aeroporto\+\_\+destino} & Chave do nó de destino (aeroporto). \\
+\hline
+{\em airline} & Nome da companhia aérea que opera a rota. @\+Complexity O(1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_ac6074ee41e491063dd763406ced69164_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_ac6074ee41e491063dd763406ced69164_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_ae195d264a640713a5a3b193c79325446}\label{class_graph_ae195d264a640713a5a3b193c79325446}} 
+\index{Graph@{Graph}!addNode@{addNode}}
+\index{addNode@{addNode}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{addNode()}{addNode()}}
+{\footnotesize\ttfamily void Graph\+::add\+Node (\begin{DoxyParamCaption}\item[{const string \&}]{key,  }\item[{\mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&}]{airport }\end{DoxyParamCaption})}
+
+
+
+Adiciona um nó ao grafo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Chave para o mapa de nós. \\
+\hline
+{\em airport} & Dados do aeroporto a ser adicionado.\\
+\hline
+\end{DoxyParams}
+Adiciona um nó ao grafo, representando um aeroporto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Chave única para identificar o nó no grafo (codigo do aeroporto). \\
+\hline
+{\em airport} & Instância de \mbox{\hyperlink{class_aeroporto}{Aeroporto}} a ser armazenada no nó. @\+Complexity O(1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_ae195d264a640713a5a3b193c79325446_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_adb397499f22bc2558c264356fdd2a978}\label{class_graph_adb397499f22bc2558c264356fdd2a978}} 
+\index{Graph@{Graph}!bfs@{bfs}}
+\index{bfs@{bfs}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{bfs()}{bfs()}}
+{\footnotesize\ttfamily void Graph\+::bfs (\begin{DoxyParamCaption}\item[{const string \&}]{v }\end{DoxyParamCaption})}
+
+Executa uma busca em largura a partir de um nó de origem, atualizando as distâncias dos nós visitados. @\+Complexity O(V+E) V\+: numero de nodes, E\+: numero de edges 
+\begin{DoxyParams}{Parameters}
+{\em v} & Chave do nó de origem. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{class_graph_adb397499f22bc2558c264356fdd2a978_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_adb397499f22bc2558c264356fdd2a978_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_a903f8a5713f191e86568b347d8f21945}\label{class_graph_a903f8a5713f191e86568b347d8f21945}} 
+\index{Graph@{Graph}!buildPaths@{buildPaths}}
+\index{buildPaths@{buildPaths}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{buildPaths()}{buildPaths()}}
+{\footnotesize\ttfamily void Graph\+::build\+Paths (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ string, vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ \&}]{parents,  }\item[{vector$<$ vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ \&}]{paths,  }\item[{vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ \&}]{curr\+Path,  }\item[{const string \&}]{p,  }\item[{const string \&}]{destination }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Constroi todos os caminhos possíveis entre dois nós de um grafo a partir de um mapa de nós-\/pais. @\+Complexity O(n) n\+: numero total de caminhos 
+\begin{DoxyParams}{Parameters}
+{\em parents} & Mapa de nós-\/pais, onde cada chave é um nó e o valor é uma lista de voos que o levaram até lá. \\
+\hline
+{\em paths} & Lista de caminhos encontrados, onde cada caminho é uma lista de voos. \\
+\hline
+{\em curr\+Path} & Caminho atual sendo construído. \\
+\hline
+{\em p} & Nó atual. \\
+\hline
+{\em destination} & Nó de destino. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_graph_a903f8a5713f191e86568b347d8f21945_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_a903f8a5713f191e86568b347d8f21945_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_a69783a9e571ad1645dcff1b5488ccdb0}\label{class_graph_a69783a9e571ad1645dcff1b5488ccdb0}} 
+\index{Graph@{Graph}!dfs@{dfs}}
+\index{dfs@{dfs}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{dfs()}{dfs()}}
+{\footnotesize\ttfamily void Graph\+::dfs (\begin{DoxyParamCaption}\item[{const string \&}]{v }\end{DoxyParamCaption})}
+
+Executa uma busca em profundidade a partir de um nó de origem, marcando os nós visitados como parte de um ciclo. @\+Complexity O(V+E) V\+: numero de nodes, E\+: numero de edges 
+\begin{DoxyParams}{Parameters}
+{\em v} & Chave do nó de origem. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{class_graph_a69783a9e571ad1645dcff1b5488ccdb0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_a69783a9e571ad1645dcff1b5488ccdb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_af8d54d72caf961cce6734886e35f8560}\label{class_graph_af8d54d72caf961cce6734886e35f8560}} 
+\index{Graph@{Graph}!dfs\_articulation\_points@{dfs\_articulation\_points}}
+\index{dfs\_articulation\_points@{dfs\_articulation\_points}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{dfs\_articulation\_points()}{dfs\_articulation\_points()}}
+{\footnotesize\ttfamily void Graph\+::dfs\+\_\+articulation\+\_\+points (\begin{DoxyParamCaption}\item[{const string \&}]{v,  }\item[{int \&}]{order,  }\item[{list$<$ string $>$ \&}]{l,  }\item[{vector$<$ string $>$}]{airline }\end{DoxyParamCaption})}
+
+Executa uma busca em profundidade a partir de um nó de origem, encontrando pontos de articulação e adicionando-\/os a uma lista. @\+Complexity O(V+E) V\+: numero de nodes, E\+: numero de edges 
+\begin{DoxyParams}{Parameters}
+{\em v} & Chave do nó de origem. \\
+\hline
+{\em order} & Variável para controlar a ordem de visitação dos nós. \\
+\hline
+{\em l} & Lista de pontos de articulação encontrados. \\
+\hline
+{\em airline} & Vetor de strings com as companhias aéreas a que se quer encontrar os pontos de articulação. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_graph_af8d54d72caf961cce6734886e35f8560_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_af8d54d72caf961cce6734886e35f8560_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_ad822b5e8b10da2ed7bc6300ee46f52f4}\label{class_graph_ad822b5e8b10da2ed7bc6300ee46f52f4}} 
+\index{Graph@{Graph}!distanceBFS@{distanceBFS}}
+\index{distanceBFS@{distanceBFS}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{distanceBFS()}{distanceBFS()}}
+{\footnotesize\ttfamily void Graph\+::distance\+BFS (\begin{DoxyParamCaption}\item[{const string \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Calcula a distância de cada nó a partir de um nó de origem usando busca em largura. @\+Complexity O(V+E) V\+: numero de nodes, E\+: numero de edges 
+\begin{DoxyParams}{Parameters}
+{\em v} & Chave do nó de origem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+As distâncias são armazenadas no próprio nó, na variável node\+Dist. 
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_ad822b5e8b10da2ed7bc6300ee46f52f4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_a1030048180587b2cbdc72f123968e909}\label{class_graph_a1030048180587b2cbdc72f123968e909}} 
+\index{Graph@{Graph}!getParents@{getParents}}
+\index{getParents@{getParents}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{getParents()}{getParents()}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$ string, vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ Graph\+::get\+Parents (\begin{DoxyParamCaption}\item[{const string \&}]{start\+Node\+Key,  }\item[{const string \&}]{end\+Node\+Key,  }\item[{const unordered\+\_\+set$<$ string $>$ \&}]{airlines }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Encontra todos os caminhos possíveis entre dois nós de um grafo, respeitando as restrições de companhias aéreas. @\+Complexity O(V+E) V\+: numero de nodes, E\+: numero de edges 
+\begin{DoxyParams}{Parameters}
+{\em start\+Node\+Key} & Chave do nó de origem. \\
+\hline
+{\em end\+Node\+Key} & Chave do nó de destino. \\
+\hline
+{\em airlines} & Conjunto de códigos de companhias aéreas permitidas. Se vazio, qualquer companhia é permitida.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+unordered\+\_\+map 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_a1030048180587b2cbdc72f123968e909_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_a846fb7b8e3483c7f8f49b5a4bc88cf40}\label{class_graph_a846fb7b8e3483c7f8f49b5a4bc88cf40}} 
+\index{Graph@{Graph}!restart@{restart}}
+\index{restart@{restart}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void Graph\+::restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reinicia os valores de visibilidade, distância e informações de ponte e componente para todos os nós do grafo. \begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_a846fb7b8e3483c7f8f49b5a4bc88cf40_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_graph_a58b2134bf5fa76fb6ce5ab68baa8d0e2}\label{class_graph_a58b2134bf5fa76fb6ce5ab68baa8d0e2}} 
+\index{Graph@{Graph}!shortestPaths@{shortestPaths}}
+\index{shortestPaths@{shortestPaths}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{shortestPaths()}{shortestPaths()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ \mbox{\hyperlink{class_voo}{Voo}} $>$ $>$ Graph\+::shortest\+Paths (\begin{DoxyParamCaption}\item[{const string \&}]{start\+Node\+Key,  }\item[{const string \&}]{end\+Node\+Key,  }\item[{const unordered\+\_\+set$<$ string $>$ \&}]{airlines }\end{DoxyParamCaption})}
+
+
+
+Calcula os caminhos mais curtos entre os nós de origem e destino, considerando apenas as companhias aéreas especificadas. @\+Complexity O(V+\+E+n) V\+: numero de nodes, E\+: numero de edges, numero total de paths construidos em build\+Paths. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Node\+Key} & Chave do nó de origem. \\
+\hline
+{\em end\+Node\+Key} & Chave do nó de destino. \\
+\hline
+{\em airlines} & Conjunto de chaves das companhias aéreas a serem consideradas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+2d vector 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{class_graph_a58b2134bf5fa76fb6ce5ab68baa8d0e2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_graph_a58b2134bf5fa76fb6ce5ab68baa8d0e2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graph_a60baa846929049c84b7e50ffb5f401e8}\label{class_graph_a60baa846929049c84b7e50ffb5f401e8}} 
+\index{Graph@{Graph}!hasDir@{hasDir}}
+\index{hasDir@{hasDir}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{hasDir}{hasDir}}
+{\footnotesize\ttfamily bool Graph\+::has\+Dir}
+
+
+
+Indica se o grafo é direcionado ou não. Se false, o grafo é não direcionado. Se true, o grafo é direcionado. 
+
+\mbox{\Hypertarget{class_graph_a81a76a428e630453ef019a15b9092967}\label{class_graph_a81a76a428e630453ef019a15b9092967}} 
+\index{Graph@{Graph}!n@{n}}
+\index{n@{n}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily int Graph\+::n}
+
+
+
+Tamanho do grafo (os vértices são numerados de 1 a n). 
+
+\mbox{\Hypertarget{class_graph_a52d5d86990e452a09d9404d4eed03075}\label{class_graph_a52d5d86990e452a09d9404d4eed03075}} 
+\index{Graph@{Graph}!nodes@{nodes}}
+\index{nodes@{nodes}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{nodes}{nodes}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$string, \mbox{\hyperlink{struct_graph_1_1_node}{Node}}$>$ Graph\+::nodes}
+
+
+
+Mapa que mapeia os nomes dos aeroportos para os nós correspondentes. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/include/\mbox{\hyperlink{_graph_8h}{Graph.\+h}}\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/src/\mbox{\hyperlink{_graph_8cpp}{Graph.\+cpp}}\end{DoxyCompactItemize}

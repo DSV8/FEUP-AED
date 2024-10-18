@@ -1,0 +1,6 @@
+<map id="Aeroporto::getcodigo" name="Aeroporto::getcodigo">
+<area shape="rect" id="node1" title="Obtém o código do aeroporto." alt="" coords="301,31,444,56"/>
+<area shape="rect" id="node2" href="$class_geral.html#a35d59d7468951859fff79cfc9d7641ab" title="Lê os dados de aeroportos de um arquivo CSV e armazena em um vetor de Aeroporto." alt="" coords="111,5,247,31"/>
+<area shape="rect" id="node4" href="$class_aeroporto.html#abc7b62db80d23e362d79a48b4131fb52" title="Sobrecarga do operador de igualdade. Verifica se dois aeroportos são iguais, comparando seus códigos." alt="" coords="104,55,253,80"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,31"/>
+</map>

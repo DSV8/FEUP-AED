@@ -1,0 +1,65 @@
+\hypertarget{_geral_8h_source}{}\doxysection{Geral.\+h}
+\label{_geral_8h_source}\index{C:/Users/gabri/Documents/aed/Projeto-\/Aed-\/2/include/Geral.h@{C:/Users/gabri/Documents/aed/Projeto-\/Aed-\/2/include/Geral.h}}
+\mbox{\hyperlink{_geral_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by gabri on 12/23/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef PROJETO\_AED\_GERAL\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define PROJETO\_AED\_GERAL\_H}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <unordered\_set>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}../include/CsvLeitor.h"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_aeroporto_8h}{Aeroporto.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_airline_8h}{Airline.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_voo_8h}{Voo.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_graph_8h}{Graph.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_cidade_8h}{Cidade.h}}"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_geral}{Geral}} \{}
+\DoxyCodeLine{19 \textcolor{keyword}{public}:}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_geral_a4361a2b6782a2ad02eaeeecc2984aaf6}{Geral}}();}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_geral_a35d59d7468951859fff79cfc9d7641ab}{leraeroportos}}();}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_geral_a86884c7e8d6abb93c1a475fed43e11fb}{lerairlines}}();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_geral_a1170df32093bfd23b805ca89f4022029}{lervoos}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25     std::vector<Airline> \mbox{\hyperlink{class_geral_a8e82c5d1cf114006c5185a1dbe735a84}{getairlines}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{26     std::vector<Voo> \mbox{\hyperlink{class_geral_a62a34dabfa96e07a0c6e51e0d3e3671d}{getvoos}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{27     std::unordered\_map<string, Cidade> \mbox{\hyperlink{class_geral_a986b33339cf13698ad0980f6d5afe6db}{getcidades}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{29     std::vector<Aeroporto> \mbox{\hyperlink{class_geral_a0dc75f9e247f704b49686b2ef307290f}{aeroportos}};}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_geral_a0ca8147157c0a7b6d97aa3baf6fff599}{getShortestPaths}}();}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_geral_a04a38126f28bde32dee08760777e97fa}{estatisticasGlobais}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_geral_a647f4c8911d342119c55982d56a42518}{numvoos}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& codigoaeroporto);}
+\DoxyCodeLine{36     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_geral_a5bf6db1ed696e60a623c467f451decc2}{numvoosairline}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& codigoaeroporto);}
+\DoxyCodeLine{37     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_geral_a85e05b20f1e4f04f14d974966da79d89}{numvoosdestino}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& codigoaeroporto);}
+\DoxyCodeLine{38     \textcolor{keywordtype}{size\_t} \mbox{\hyperlink{class_geral_afbffc2bb467eaddfc16385a26d0423b2}{numvoospais}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& codigoaeroporto);}
+\DoxyCodeLine{39     vector<size\_t> \mbox{\hyperlink{class_geral_a41c0bb6da0497604cafc227eeb22f41f}{nummaxvoos}}( \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& codigoaeroporto, \textcolor{keywordtype}{int} y);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     list<string> \mbox{\hyperlink{class_geral_a0fd13b42dbb816b21a9db42b0b92519e}{articulationPoints}}( \textcolor{keyword}{const} vector<string>\& airline);}
+\DoxyCodeLine{42     \textcolor{comment}{//menu}}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_geral_af4f8274b1a1d141ddb7a9d2bdffb7be5}{menuprincipal}}();}
+\DoxyCodeLine{44     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_geral_a0a0064df2348319e78f7ddb0806fd14f}{voltarmenu}}();}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{46 \textcolor{keyword}{private}:}
+\DoxyCodeLine{51     \mbox{\hyperlink{class_graph}{Graph}} \mbox{\hyperlink{class_geral_a7145a77703cdc6082b340436d7cd775d}{info}} = \mbox{\hyperlink{class_graph}{Graph}}(3019, \textcolor{keyword}{true});}
+\DoxyCodeLine{55     std::vector<Airline> \mbox{\hyperlink{class_geral_a6f0bcdde7c2480f2beeb285af075398c}{airlines}};}
+\DoxyCodeLine{59     std::unordered\_set<string> \mbox{\hyperlink{class_geral_a2a8e0c988681bc794332df34f6245b75}{airlineCodes}};}
+\DoxyCodeLine{63     std::unordered\_set<string> \mbox{\hyperlink{class_geral_a2186e3bfa558bcd3404ed5282dd822ab}{airlineNames}};}
+\DoxyCodeLine{67     std::vector<Voo> \mbox{\hyperlink{class_geral_ab42c987ccccfd6adf29e58b5b903f4e2}{voos}};}
+\DoxyCodeLine{71     std::unordered\_map<string, Cidade> \mbox{\hyperlink{class_geral_ae2b2f3cb9261eb1628b29628c4bd5ca9}{cidades}};}
+\DoxyCodeLine{75     std::unordered\_set<string> \mbox{\hyperlink{class_geral_a72c2e980148e931d6cfdd86989e4e2b1}{paises}};}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_geral_ac2f752a78abdbd6bd388b8c7565ac4ac}{displayShortestPaths}}(\textcolor{keyword}{const} vector<vector<Voo>>\& shortestPaths);}
+\DoxyCodeLine{78 \};}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJETO\_AED\_GERAL\_H}}
+
+\end{DoxyCode}

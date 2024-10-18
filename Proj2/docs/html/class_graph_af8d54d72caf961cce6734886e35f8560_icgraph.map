@@ -1,0 +1,9 @@
+<map id="Graph::dfs_articulation_points" name="Graph::dfs_articulation_points">
+<area shape="rect" id="node1" title=" " alt="" coords="795,99,947,139"/>
+<area shape="rect" id="node2" href="$class_geral.html#a0fd13b42dbb816b21a9db42b0b92519e" title="Retorna uma lista com os códigos dos aeroportos que são pontos de articulação no grafo de voos,..." alt="" coords="585,107,747,132"/>
+<area shape="rect" id="node3" href="$class_geral.html#af4f8274b1a1d141ddb7a9d2bdffb7be5" title="Exibe o menu principal do programa e permite ao utilizador escolher uma das opções disponíveis." alt="" coords="396,107,537,132"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="261,5,312,31"/>
+<area shape="rect" id="node5" href="$class_geral.html#a0a0064df2348319e78f7ddb0806fd14f" title="Volta para o menu principal Esta função é utilizada para retornar ao menu principal após a realização..." alt="" coords="225,107,348,132"/>
+<area shape="rect" id="node6" href="$class_geral.html#a04a38126f28bde32dee08760777e97fa" title="Calcula estatísticas globais sobre um país, companhia aérea ou voos." alt="" coords="5,83,177,108"/>
+<area shape="rect" id="node7" href="$class_geral.html#a0ca8147157c0a7b6d97aa3baf6fff599" title="Obtém o caminho mais curto entre dois locais escolhidos pelo usuário." alt="" coords="10,132,173,157"/>
+</map>

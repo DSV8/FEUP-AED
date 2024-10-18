@@ -1,0 +1,4 @@
+<map id="Cidade::getnome" name="Cidade::getnome">
+<area shape="rect" id="node1" title="Obtém o nome da cidade." alt="" coords="187,5,307,31"/>
+<area shape="rect" id="node2" href="$class_cidade.html#ae1d2a5270170c303dbf8747ea254f0fc" title="Sobrecarga do operador de igualdade. Verifica se duas cidades são iguais, comparando seus nomes." alt="" coords="5,5,139,31"/>
+</map>

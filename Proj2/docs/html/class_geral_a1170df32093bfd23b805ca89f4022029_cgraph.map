@@ -1,0 +1,10 @@
+<map id="Geral::lervoos" name="Geral::lervoos">
+<area shape="rect" id="node1" title="Lê os dados de voo de um arquivo CSV e armazena em um vetor de Voo." alt="" coords="5,80,107,105"/>
+<area shape="rect" id="node2" href="$class_graph.html#ac6074ee41e491063dd763406ced69164" title="Adiciona uma aresta ao grafo." alt="" coords="155,55,271,80"/>
+<area shape="rect" id="node7" href="$class_csv_leitor.html#a8dad5de8334527ef89439b3a7d4a8847" title="Lê o arquivo CSV especificado e armazena os valores em um vetor de CsvLinha." alt="" coords="164,104,261,129"/>
+<area shape="rect" id="node3" href="$class_ferramentas.html#af10c5ae522db1625785acaf0658de66e" title=" " alt="" coords="319,55,565,80"/>
+<area shape="rect" id="node4" href="$class_aeroporto.html#a587f1a27cbb9ba2a0f08edee92786891" title="Obtém as coordenadas geográficas do aeroporto." alt="" coords="613,5,792,31"/>
+<area shape="rect" id="node5" href="$class_coordenadas.html#a5561c681caf5ccc77da0e61fd8d41dec" title="Obtém a latitude das coordenadas." alt="" coords="619,55,786,80"/>
+<area shape="rect" id="node6" href="$class_coordenadas.html#a9210daf8ada1613d53db2a527f3fa250" title="Obtém a longitude das coordenadas." alt="" coords="615,104,791,129"/>
+<area shape="rect" id="node8" href="$class_csv_linha.html#a8bd1405968a593fce335eec17a33a62b" title="Divide a linha em colunas." alt="" coords="379,104,505,129"/>
+</map>

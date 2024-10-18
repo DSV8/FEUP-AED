@@ -1,0 +1,27 @@
+<map id="Geral::menuprincipal" name="Geral::menuprincipal">
+<area shape="rect" id="node1" title="Exibe o menu principal do programa e permite ao utilizador escolher uma das opções disponíveis." alt="" coords="5,414,147,439"/>
+<area shape="rect" id="node2" href="$class_geral.html#a0fd13b42dbb816b21a9db42b0b92519e" title="Retorna uma lista com os códigos dos aeroportos que são pontos de articulação no grafo de voos,..." alt="" coords="200,115,361,141"/>
+<area shape="rect" id="node4" href="$class_geral.html#a04a38126f28bde32dee08760777e97fa" title="Calcula estatísticas globais sobre um país, companhia aérea ou voos." alt="" coords="195,267,367,293"/>
+<area shape="rect" id="node15" href="$class_geral.html#a0a0064df2348319e78f7ddb0806fd14f" title="Volta para o menu principal Esta função é utilizada para retornar ao menu principal após a realização..." alt="" coords="475,414,597,439"/>
+<area shape="rect" id="node16" href="$class_geral.html#a0ca8147157c0a7b6d97aa3baf6fff599" title="Obtém o caminho mais curto entre dois locais escolhidos pelo usuário." alt="" coords="199,494,362,519"/>
+<area shape="rect" id="node3" href="$class_graph.html#af8d54d72caf961cce6734886e35f8560" title=" " alt="" coords="460,29,612,69"/>
+<area shape="rect" id="node5" href="$class_geral.html#a41c0bb6da0497604cafc227eeb22f41f" title="Retorna um vetor com o número de aeroportos, cidades e países alcançáveis a partir do aeroporto com o..." alt="" coords="467,94,605,119"/>
+<area shape="rect" id="node9" href="$class_geral.html#a647f4c8911d342119c55982d56a42518" title="Retorna o número de voos partindo do aeroporto com o código especificado." alt="" coords="480,143,592,169"/>
+<area shape="rect" id="node10" href="$class_geral.html#a5bf6db1ed696e60a623c467f451decc2" title="Retorna o número de voos de cada companhia aérea partindo do aeroporto com o código especificado." alt="" coords="463,193,609,218"/>
+<area shape="rect" id="node11" href="$class_geral.html#a85e05b20f1e4f04f14d974966da79d89" title="Retorna o número de destinos diferentes para os quais há voos partindo do aeroporto com o código espe..." alt="" coords="459,242,613,267"/>
+<area shape="rect" id="node12" href="$class_geral.html#afbffc2bb467eaddfc16385a26d0423b2" title="Retorna o número de países diferentes para os quais há voos partindo do aeroporto com o código especi..." alt="" coords="468,291,604,317"/>
+<area shape="rect" id="node13" href="$_geral_8cpp.html#a3d43c59720e01a87d960efbafa46efc6" title=" " alt="" coords="514,365,558,390"/>
+<area shape="rect" id="node6" href="$class_graph.html#adb397499f22bc2558c264356fdd2a978" title=" " alt="" coords="752,94,835,119"/>
+<area shape="rect" id="node7" href="$class_graph.html#a69783a9e571ad1645dcff1b5488ccdb0" title=" " alt="" coords="939,70,1022,95"/>
+<area shape="rect" id="node8" href="$class_graph.html#a846fb7b8e3483c7f8f49b5a4bc88cf40" title=" " alt="" coords="929,119,1032,145"/>
+<area shape="rect" id="node14" href="$_geral_8cpp.html#a20e1b3eaea2f50bbb662ba1140fb44b5" title=" " alt="" coords="770,365,817,390"/>
+<area shape="rect" id="node17" href="$class_ferramentas.html#adbe456a63261eaded4e97ee6957c4ed4" title=" " alt="" coords="415,463,657,489"/>
+<area shape="rect" id="node20" href="$class_geral.html#ac2f752a78abdbd6bd388b8c7565ac4ac" title=" " alt="" coords="443,513,629,538"/>
+<area shape="rect" id="node21" href="$class_cidade.html#ae6cba8f4b488357e67d723c86cd8f39b" title="Obtém a lista de aeroportos da cidade." alt="" coords="461,562,611,587"/>
+<area shape="rect" id="node22" href="$class_graph.html#a58b2134bf5fa76fb6ce5ab68baa8d0e2" title="Calcula os caminhos mais curtos entre os nós de origem e destino, considerando apenas as companhias a..." alt="" coords="463,611,609,637"/>
+<area shape="rect" id="node18" href="$class_coordenadas.html#a5561c681caf5ccc77da0e61fd8d41dec" title="Obtém a latitude das coordenadas." alt="" coords="710,426,877,451"/>
+<area shape="rect" id="node19" href="$class_coordenadas.html#a9210daf8ada1613d53db2a527f3fa250" title="Obtém a longitude das coordenadas." alt="" coords="705,475,881,501"/>
+<area shape="rect" id="node23" href="$class_graph.html#a903f8a5713f191e86568b347d8f21945" title=" " alt="" coords="730,562,857,587"/>
+<area shape="rect" id="node24" href="$class_graph.html#ad822b5e8b10da2ed7bc6300ee46f52f4" title=" " alt="" coords="723,611,863,637"/>
+<area shape="rect" id="node25" href="$class_graph.html#a1030048180587b2cbdc72f123968e909" title=" " alt="" coords="729,661,857,686"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Graph::bfs" name="Graph::bfs">
+<area shape="rect" id="node1" title=" " alt="" coords="981,81,1064,107"/>
+<area shape="rect" id="node2" href="$class_geral.html#a41c0bb6da0497604cafc227eeb22f41f" title="Retorna um vetor com o número de aeroportos, cidades e países alcançáveis a partir do aeroporto com o..." alt="" coords="796,81,933,107"/>
+<area shape="rect" id="node3" href="$class_geral.html#a04a38126f28bde32dee08760777e97fa" title="Calcula estatísticas globais sobre um país, companhia aérea ou voos." alt="" coords="576,81,748,107"/>
+<area shape="rect" id="node4" href="$class_geral.html#af4f8274b1a1d141ddb7a9d2bdffb7be5" title="Exibe o menu principal do programa e permite ao utilizador escolher uma das opções disponíveis." alt="" coords="387,56,528,81"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="252,5,303,31"/>
+<area shape="rect" id="node6" href="$class_geral.html#a0a0064df2348319e78f7ddb0806fd14f" title="Volta para o menu principal Esta função é utilizada para retornar ao menu principal após a realização..." alt="" coords="216,107,339,132"/>
+<area shape="rect" id="node7" href="$class_geral.html#a0ca8147157c0a7b6d97aa3baf6fff599" title="Obtém o caminho mais curto entre dois locais escolhidos pelo usuário." alt="" coords="5,81,168,107"/>
+</map>

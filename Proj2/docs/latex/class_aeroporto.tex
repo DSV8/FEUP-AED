@@ -1,0 +1,248 @@
+\hypertarget{class_aeroporto}{}\doxysection{Aeroporto Class Reference}
+\label{class_aeroporto}\index{Aeroporto@{Aeroporto}}
+
+
+Classe que representa um aeroporto.  
+
+
+
+
+{\ttfamily \#include $<$Aeroporto.\+h$>$}
+
+
+
+Collaboration diagram for Aeroporto\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{class_aeroporto__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aeroporto_ae42f7700c5a73488a1c54f636312c6c8}{Aeroporto}} ()
+\item 
+\mbox{\hyperlink{class_aeroporto_ad55d27bfb513630ff5daaa324a33f6b6}{Aeroporto}} (std\+::string codigo\+\_\+, std\+::string nome\+\_\+, std\+::string cidade\+\_\+, std\+::string pais\+\_\+, \mbox{\hyperlink{class_coordenadas}{Coordenadas}} coordenadas\+\_\+)
+\item 
+\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_aeroporto_a587f1a27cbb9ba2a0f08edee92786891}{getcoordenadas}} () const
+\begin{DoxyCompactList}\small\item\em Obtém as coordenadas geográficas do aeroporto. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_aeroporto_abe603fdea3a13c70c043fb7dbdef032f}{getcodigo}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o código do aeroporto. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_aeroporto_ac0ac100ed06ae2f2b48c41d5c0d5c096}{getnome}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o nome do aeroporto. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_aeroporto_a7263b4ae0ba35357dbc03ce8bcb279bc}{getpais}} () const
+\begin{DoxyCompactList}\small\item\em Obtém o país em que o aeroporto está localizado. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_aeroporto_ac826d4da856a89a9acba84f70f758ac4}{getcidade}} () const
+\begin{DoxyCompactList}\small\item\em Obtém a cidade em que o aeroporto está localizado. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_aeroporto_abc7b62db80d23e362d79a48b4131fb52}{operator==}} (const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&ap) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de igualdade. Verifica se dois aeroportos são iguais, comparando seus códigos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_aeroporto_aea6a4360561b5fa0032b6833ebbbabfb}{codigo}}
+\item 
+std\+::string \mbox{\hyperlink{class_aeroporto_a3e984961e8739b5ebdff39e16eb0ec0b}{nome}}
+\item 
+std\+::string \mbox{\hyperlink{class_aeroporto_a425650dbc245642dad9c1e536b939a3d}{cidade}}
+\item 
+std\+::string \mbox{\hyperlink{class_aeroporto_a5bffbb9f6d5e0f10d8d2552ad5d44933}{pais}}
+\item 
+\mbox{\hyperlink{class_coordenadas}{Coordenadas}} \mbox{\hyperlink{class_aeroporto_a03f85ef6b7670cf0bd659d3b8620a980}{coordenadas}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_aeroporto_a0f9a046723b710341d2666615400bd90}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de inserção em stream. Permite imprimir o aeroporto em stream, de forma legível para o usuário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa um aeroporto. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_aeroporto_ae42f7700c5a73488a1c54f636312c6c8}\label{class_aeroporto_ae42f7700c5a73488a1c54f636312c6c8}} 
+\index{Aeroporto@{Aeroporto}!Aeroporto@{Aeroporto}}
+\index{Aeroporto@{Aeroporto}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{Aeroporto()}{Aeroporto()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Aeroporto\+::\+Aeroporto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_aeroporto_ad55d27bfb513630ff5daaa324a33f6b6}\label{class_aeroporto_ad55d27bfb513630ff5daaa324a33f6b6}} 
+\index{Aeroporto@{Aeroporto}!Aeroporto@{Aeroporto}}
+\index{Aeroporto@{Aeroporto}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{Aeroporto()}{Aeroporto()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Aeroporto\+::\+Aeroporto (\begin{DoxyParamCaption}\item[{std\+::string}]{codigo\+\_\+,  }\item[{std\+::string}]{nome\+\_\+,  }\item[{std\+::string}]{cidade\+\_\+,  }\item[{std\+::string}]{pais\+\_\+,  }\item[{\mbox{\hyperlink{class_coordenadas}{Coordenadas}}}]{coordenadas\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_aeroporto_ac826d4da856a89a9acba84f70f758ac4}\label{class_aeroporto_ac826d4da856a89a9acba84f70f758ac4}} 
+\index{Aeroporto@{Aeroporto}!getcidade@{getcidade}}
+\index{getcidade@{getcidade}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{getcidade()}{getcidade()}}
+{\footnotesize\ttfamily std\+::string Aeroporto\+::getcidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém a cidade em que o aeroporto está localizado. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aeroporto_abe603fdea3a13c70c043fb7dbdef032f}\label{class_aeroporto_abe603fdea3a13c70c043fb7dbdef032f}} 
+\index{Aeroporto@{Aeroporto}!getcodigo@{getcodigo}}
+\index{getcodigo@{getcodigo}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{getcodigo()}{getcodigo()}}
+{\footnotesize\ttfamily std\+::string Aeroporto\+::getcodigo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o código do aeroporto. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_aeroporto_abe603fdea3a13c70c043fb7dbdef032f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_aeroporto_a587f1a27cbb9ba2a0f08edee92786891}\label{class_aeroporto_a587f1a27cbb9ba2a0f08edee92786891}} 
+\index{Aeroporto@{Aeroporto}!getcoordenadas@{getcoordenadas}}
+\index{getcoordenadas@{getcoordenadas}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{getcoordenadas()}{getcoordenadas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenadas}{Coordenadas}} Aeroporto\+::getcoordenadas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém as coordenadas geográficas do aeroporto. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_coordenadas}{Coordenadas}} 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_aeroporto_a587f1a27cbb9ba2a0f08edee92786891_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_aeroporto_ac0ac100ed06ae2f2b48c41d5c0d5c096}\label{class_aeroporto_ac0ac100ed06ae2f2b48c41d5c0d5c096}} 
+\index{Aeroporto@{Aeroporto}!getnome@{getnome}}
+\index{getnome@{getnome}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{getnome()}{getnome()}}
+{\footnotesize\ttfamily std\+::string Aeroporto\+::getnome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o nome do aeroporto. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aeroporto_a7263b4ae0ba35357dbc03ce8bcb279bc}\label{class_aeroporto_a7263b4ae0ba35357dbc03ce8bcb279bc}} 
+\index{Aeroporto@{Aeroporto}!getpais@{getpais}}
+\index{getpais@{getpais}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{getpais()}{getpais()}}
+{\footnotesize\ttfamily std\+::string Aeroporto\+::getpais (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtém o país em que o aeroporto está localizado. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_aeroporto_abc7b62db80d23e362d79a48b4131fb52}\label{class_aeroporto_abc7b62db80d23e362d79a48b4131fb52}} 
+\index{Aeroporto@{Aeroporto}!operator==@{operator==}}
+\index{operator==@{operator==}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Aeroporto\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&}]{ap }\end{DoxyParamCaption}) const}
+
+
+
+Sobrecarga do operador de igualdade. Verifica se dois aeroportos são iguais, comparando seus códigos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ap} & O outro aeroporto a ser comparado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se os dois aeroportos têm o mesmo código, false caso contrário. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_aeroporto_abc7b62db80d23e362d79a48b4131fb52_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_aeroporto_a0f9a046723b710341d2666615400bd90}\label{class_aeroporto_a0f9a046723b710341d2666615400bd90}} 
+\index{Aeroporto@{Aeroporto}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga do operador de inserção em stream. Permite imprimir o aeroporto em stream, de forma legível para o usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Stream de saída. \\
+\hline
+{\em aeroporto} & O aeroporto a ser impresso. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A stream de saída, para permitir encadeamento. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_aeroporto_a425650dbc245642dad9c1e536b939a3d}\label{class_aeroporto_a425650dbc245642dad9c1e536b939a3d}} 
+\index{Aeroporto@{Aeroporto}!cidade@{cidade}}
+\index{cidade@{cidade}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{cidade}{cidade}}
+{\footnotesize\ttfamily std\+::string Aeroporto\+::cidade\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_aeroporto_aea6a4360561b5fa0032b6833ebbbabfb}\label{class_aeroporto_aea6a4360561b5fa0032b6833ebbbabfb}} 
+\index{Aeroporto@{Aeroporto}!codigo@{codigo}}
+\index{codigo@{codigo}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{codigo}{codigo}}
+{\footnotesize\ttfamily std\+::string Aeroporto\+::codigo\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_aeroporto_a03f85ef6b7670cf0bd659d3b8620a980}\label{class_aeroporto_a03f85ef6b7670cf0bd659d3b8620a980}} 
+\index{Aeroporto@{Aeroporto}!coordenadas@{coordenadas}}
+\index{coordenadas@{coordenadas}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{coordenadas}{coordenadas}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenadas}{Coordenadas}} Aeroporto\+::coordenadas\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_aeroporto_a3e984961e8739b5ebdff39e16eb0ec0b}\label{class_aeroporto_a3e984961e8739b5ebdff39e16eb0ec0b}} 
+\index{Aeroporto@{Aeroporto}!nome@{nome}}
+\index{nome@{nome}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{nome}{nome}}
+{\footnotesize\ttfamily std\+::string Aeroporto\+::nome\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_aeroporto_a5bffbb9f6d5e0f10d8d2552ad5d44933}\label{class_aeroporto_a5bffbb9f6d5e0f10d8d2552ad5d44933}} 
+\index{Aeroporto@{Aeroporto}!pais@{pais}}
+\index{pais@{pais}!Aeroporto@{Aeroporto}}
+\doxysubsubsection{\texorpdfstring{pais}{pais}}
+{\footnotesize\ttfamily std\+::string Aeroporto\+::pais\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/include/\mbox{\hyperlink{_aeroporto_8h}{Aeroporto.\+h}}\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/src/\mbox{\hyperlink{_aeroporto_8cpp}{Aeroporto.\+cpp}}\end{DoxyCompactItemize}

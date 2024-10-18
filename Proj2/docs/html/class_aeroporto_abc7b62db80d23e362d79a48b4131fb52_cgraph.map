@@ -1,0 +1,4 @@
+<map id="Aeroporto::operator==" name="Aeroporto::operator==">
+<area shape="rect" id="node1" title="Sobrecarga do operador de igualdade. Verifica se dois aeroportos são iguais, comparando seus códigos." alt="" coords="5,5,155,31"/>
+<area shape="rect" id="node2" href="$class_aeroporto.html#abe603fdea3a13c70c043fb7dbdef032f" title="Obtém o código do aeroporto." alt="" coords="203,5,345,31"/>
+</map>

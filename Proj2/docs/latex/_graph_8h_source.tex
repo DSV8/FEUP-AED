@@ -1,0 +1,64 @@
+\hypertarget{_graph_8h_source}{}\doxysection{Graph.\+h}
+\label{_graph_8h_source}\index{C:/Users/gabri/Documents/aed/Projeto-\/Aed-\/2/include/Graph.h@{C:/Users/gabri/Documents/aed/Projeto-\/Aed-\/2/include/Graph.h}}
+\mbox{\hyperlink{_graph_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#ifndef PROJETO\_AED\_GRAPH\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#define PROJETO\_AED\_GRAPH\_H}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <unordered\_set>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_aeroporto_8h}{Aeroporto.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_voo_8h}{Voo.h}}"{}}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_graph}{Graph}} \{}
+\DoxyCodeLine{17 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_graph_1_1_edge}{Edge}} \{}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30         \textcolor{keywordtype}{string} \mbox{\hyperlink{struct_graph_1_1_edge_a8a80fb2eed6350b23157705a45febd68}{dest}}; \textcolor{comment}{// Destination node}}
+\DoxyCodeLine{31         \textcolor{keywordtype}{string} \mbox{\hyperlink{struct_graph_1_1_edge_a35987ec7f1da6d9a5dec1b43b1372395}{airline}};}
+\DoxyCodeLine{32         \textcolor{keywordtype}{double} \mbox{\hyperlink{struct_graph_1_1_edge_ad275c982caa32ea8cfa8b4a3d42c8f21}{edgeDist}};}
+\DoxyCodeLine{33     \};}
+\DoxyCodeLine{54     \textcolor{keyword}{struct }\mbox{\hyperlink{struct_graph_1_1_node}{Node}} \{}
+\DoxyCodeLine{55         \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \mbox{\hyperlink{struct_graph_1_1_node_aa83d95a6e4dfb3febacd500f17d877cf}{airport}};}
+\DoxyCodeLine{56         list<Edge> \mbox{\hyperlink{struct_graph_1_1_node_ad76e2bceaa07be97bce270751f0e72ae}{adj}}; \textcolor{comment}{// The list of outgoing edges (to adjacent nodes)}}
+\DoxyCodeLine{57         \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_graph_1_1_node_a50b5c3a5015ebb01cada96ede1ca96da}{visited}}; \textcolor{comment}{// As the node been visited on a search?}}
+\DoxyCodeLine{58         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_graph_1_1_node_a08807c82cf25be7613a8faa6bcdd150b}{low}};}
+\DoxyCodeLine{59         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_graph_1_1_node_ac0e4f753b4baa35a3ee5c6b7bab0c304}{num}};}
+\DoxyCodeLine{60         \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_graph_1_1_node_a5e1821da73c93ac87cbf73b26d7cf48a}{ciclo}};}
+\DoxyCodeLine{61         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_graph_1_1_node_ac2bc3b8a640c896c276bd6ee1e3c41f3}{parent}};}
+\DoxyCodeLine{62         \textcolor{keywordtype}{int} \mbox{\hyperlink{struct_graph_1_1_node_ac074c714ea46cabefa29ec05720b843d}{nodeDist}};}
+\DoxyCodeLine{63     \};}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_graph_a81a76a428e630453ef019a15b9092967}{n}};}
+\DoxyCodeLine{73     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_graph_a60baa846929049c84b7e50ffb5f401e8}{hasDir}};}
+\DoxyCodeLine{77     unordered\_map<string, Node> \mbox{\hyperlink{class_graph_a52d5d86990e452a09d9404d4eed03075}{nodes}};}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79     \textcolor{keyword}{explicit} \mbox{\hyperlink{class_graph}{Graph}}(\textcolor{keywordtype}{int} \mbox{\hyperlink{class_graph_a52d5d86990e452a09d9404d4eed03075}{nodes}}, \textcolor{keywordtype}{bool} dir = \textcolor{keyword}{false});}
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_ae195d264a640713a5a3b193c79325446}{addNode}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& key, \mbox{\hyperlink{class_aeroporto}{Aeroporto}} \&airport);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{93     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_ac6074ee41e491063dd763406ced69164}{addEdge}}(\textcolor{keywordtype}{string}\& aeroporto\_origem, \textcolor{keywordtype}{string}\& aeroporto\_destino, \textcolor{keywordtype}{string}\& airline);}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95     vector<vector<Voo>> \mbox{\hyperlink{class_graph_a58b2134bf5fa76fb6ce5ab68baa8d0e2}{shortestPaths}} (\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& startNodeKey, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& endNodeKey, \textcolor{keyword}{const} unordered\_set<string>\& airlines);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_a846fb7b8e3483c7f8f49b5a4bc88cf40}{restart}}();}
+\DoxyCodeLine{98     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_a69783a9e571ad1645dcff1b5488ccdb0}{dfs}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& v);}
+\DoxyCodeLine{99     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_adb397499f22bc2558c264356fdd2a978}{bfs}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& v);}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_af8d54d72caf961cce6734886e35f8560}{dfs\_articulation\_points}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& v, \textcolor{keywordtype}{int} \&order, list<string> \&l, vector<string> airline);}
+\DoxyCodeLine{102 \textcolor{keyword}{private}:}
+\DoxyCodeLine{103     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_ad822b5e8b10da2ed7bc6300ee46f52f4}{distanceBFS}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& v);}
+\DoxyCodeLine{104     unordered\_map<string, vector<Voo>> \mbox{\hyperlink{class_graph_a1030048180587b2cbdc72f123968e909}{getParents}} (\textcolor{keyword}{const} \textcolor{keywordtype}{string}\& startNodeKey, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& endNodeKey, \textcolor{keyword}{const} unordered\_set<string>\& airlines);}
+\DoxyCodeLine{105     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_a903f8a5713f191e86568b347d8f21945}{buildPaths}}(unordered\_map<\textcolor{keywordtype}{string}, vector<Voo>>\& parents, vector<vector<Voo>>\& paths, vector<Voo>\& currPath, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& p, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& destination);}
+\DoxyCodeLine{106 \};}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//PROJETO\_AED\_GRAPH\_H}}
+
+\end{DoxyCode}

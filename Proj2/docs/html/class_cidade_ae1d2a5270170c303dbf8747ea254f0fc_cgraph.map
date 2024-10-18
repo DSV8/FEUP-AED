@@ -1,0 +1,5 @@
+<map id="Cidade::operator==" name="Cidade::operator==">
+<area shape="rect" id="node1" title="Sobrecarga do operador de igualdade. Verifica se duas cidades são iguais, comparando seus nomes." alt="" coords="5,31,139,56"/>
+<area shape="rect" id="node2" href="$class_cidade.html#afcb41d950531f5a62bba77c390e61858" title="Obtém o nome da cidade." alt="" coords="187,5,307,31"/>
+<area shape="rect" id="node3" href="$class_cidade.html#a9baa9e984463d24d4062fbd99290920b" title="Obtém o país onde a cidade está localizada." alt="" coords="191,55,303,80"/>
+</map>

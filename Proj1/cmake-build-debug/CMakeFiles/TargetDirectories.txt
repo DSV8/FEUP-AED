@@ -1,0 +1,3 @@
+/Users/dsv_8/ClionProjects/Projeto-AED/cmake-build-debug/CMakeFiles/Project_1.dir
+/Users/dsv_8/ClionProjects/Projeto-AED/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/dsv_8/ClionProjects/Projeto-AED/cmake-build-debug/CMakeFiles/rebuild_cache.dir

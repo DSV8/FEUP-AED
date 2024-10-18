@@ -1,0 +1,203 @@
+\hypertarget{class_csv_linha}{}\doxysection{Csv\+Linha Class Reference}
+\label{class_csv_linha}\index{CsvLinha@{CsvLinha}}
+
+
+Classe que representa uma linha de um arquivo CSV (Comma Separated Values).  
+
+
+
+
+{\ttfamily \#include $<$Csv\+Linha.\+h$>$}
+
+
+
+Collaboration diagram for Csv\+Linha\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{class_csv_linha__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_csv_linha_aa933d05f10c10524522acf824246a335}{Csv\+Linha}} ()
+\item 
+\mbox{\hyperlink{class_csv_linha_ad5c19c1aa11bbf080929d2c675b3e50e}{Csv\+Linha}} (\+\_\+\+\_\+attribute\+\_\+\+\_\+((unused)) const \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \&outro)
+\item 
+\mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \& \mbox{\hyperlink{class_csv_linha_a463fcaa15b4d1fc698fe5fa4f254f3cd}{operator=}} (const \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \&outro)
+\item 
+\mbox{\hyperlink{class_csv_linha_ac7417eb4312df2311dc995b1af4950f0}{$\sim$\+Csv\+Linha}} ()=default
+\item 
+void \mbox{\hyperlink{class_csv_linha_a8bd1405968a593fce335eec17a33a62b}{parsear}} (const std\+::string \&linha, char delimitador=\textquotesingle{},\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Divide a linha em colunas. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_csv_linha_acc1a61967104eadcdc24eab448421e7e}{get\+String}} (int coluna)
+\begin{DoxyCompactList}\small\item\em Obtém um valor da linha como string. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_csv_linha_a44b2e1b6305332b35f6150bd5e58922e}{get\+Double}} (int coluna)
+\begin{DoxyCompactList}\small\item\em Obtém um valor da linha como double. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_csv_linha_a3ec27ae871f649931a97530b9382f28e}{get\+Int}} (int coluna)
+\begin{DoxyCompactList}\small\item\em Obtém um valor da linha como int. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_csv_linha_a1b539a2c1e50eeddd53774dd7c814c0f}{valores}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_csv_linha_a68f42fa2e964dfec4cacc203eec709ed}{operator==}} (const \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \&lhs, const \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de igualdade. Verifica se duas linhas CSV são iguais, comparando seus valores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa uma linha de um arquivo CSV (Comma Separated Values). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_csv_linha_aa933d05f10c10524522acf824246a335}\label{class_csv_linha_aa933d05f10c10524522acf824246a335}} 
+\index{CsvLinha@{CsvLinha}!CsvLinha@{CsvLinha}}
+\index{CsvLinha@{CsvLinha}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{CsvLinha()}{CsvLinha()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Csv\+Linha\+::\+Csv\+Linha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_csv_linha_ad5c19c1aa11bbf080929d2c675b3e50e}\label{class_csv_linha_ad5c19c1aa11bbf080929d2c675b3e50e}} 
+\index{CsvLinha@{CsvLinha}!CsvLinha@{CsvLinha}}
+\index{CsvLinha@{CsvLinha}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{CsvLinha()}{CsvLinha()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Csv\+Linha\+::\+Csv\+Linha (\begin{DoxyParamCaption}\item[{\+\_\+\+\_\+attribute\+\_\+\+\_\+((unused)) const \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \&}]{outro }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_csv_linha_ac7417eb4312df2311dc995b1af4950f0}\label{class_csv_linha_ac7417eb4312df2311dc995b1af4950f0}} 
+\index{CsvLinha@{CsvLinha}!````~CsvLinha@{$\sim$CsvLinha}}
+\index{````~CsvLinha@{$\sim$CsvLinha}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{$\sim$CsvLinha()}{~CsvLinha()}}
+{\footnotesize\ttfamily Csv\+Linha\+::$\sim$\+Csv\+Linha (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_csv_linha_a44b2e1b6305332b35f6150bd5e58922e}\label{class_csv_linha_a44b2e1b6305332b35f6150bd5e58922e}} 
+\index{CsvLinha@{CsvLinha}!getDouble@{getDouble}}
+\index{getDouble@{getDouble}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{getDouble()}{getDouble()}}
+{\footnotesize\ttfamily double Csv\+Linha\+::get\+Double (\begin{DoxyParamCaption}\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+
+
+Obtém um valor da linha como double. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coluna} & A coluna a ser lida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_csv_linha_a3ec27ae871f649931a97530b9382f28e}\label{class_csv_linha_a3ec27ae871f649931a97530b9382f28e}} 
+\index{CsvLinha@{CsvLinha}!getInt@{getInt}}
+\index{getInt@{getInt}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{getInt()}{getInt()}}
+{\footnotesize\ttfamily int Csv\+Linha\+::get\+Int (\begin{DoxyParamCaption}\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+
+
+Obtém um valor da linha como int. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coluna} & A coluna a ser lida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_csv_linha_acc1a61967104eadcdc24eab448421e7e}\label{class_csv_linha_acc1a61967104eadcdc24eab448421e7e}} 
+\index{CsvLinha@{CsvLinha}!getString@{getString}}
+\index{getString@{getString}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily std\+::string Csv\+Linha\+::get\+String (\begin{DoxyParamCaption}\item[{int}]{coluna }\end{DoxyParamCaption})}
+
+
+
+Obtém um valor da linha como string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coluna} & A coluna a ser lida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_csv_linha_a463fcaa15b4d1fc698fe5fa4f254f3cd}\label{class_csv_linha_a463fcaa15b4d1fc698fe5fa4f254f3cd}} 
+\index{CsvLinha@{CsvLinha}!operator=@{operator=}}
+\index{operator=@{operator=}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \& Csv\+Linha\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \&}]{outro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{class_csv_linha_a8bd1405968a593fce335eec17a33a62b}\label{class_csv_linha_a8bd1405968a593fce335eec17a33a62b}} 
+\index{CsvLinha@{CsvLinha}!parsear@{parsear}}
+\index{parsear@{parsear}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{parsear()}{parsear()}}
+{\footnotesize\ttfamily void Csv\+Linha\+::parsear (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{linha,  }\item[{char}]{delimitador = {\ttfamily \textquotesingle{},\textquotesingle{}} }\end{DoxyParamCaption})}
+
+
+
+Divide a linha em colunas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linha} & A linha a ser dividida. \\
+\hline
+{\em delimitador} & O delimitador das colunas. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_csv_linha_a8bd1405968a593fce335eec17a33a62b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_csv_linha_a68f42fa2e964dfec4cacc203eec709ed}\label{class_csv_linha_a68f42fa2e964dfec4cacc203eec709ed}} 
+\index{CsvLinha@{CsvLinha}!operator==@{operator==}}
+\index{operator==@{operator==}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{operator==}{operator==}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{class_csv_linha}{Csv\+Linha}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga do operador de igualdade. Verifica se duas linhas CSV são iguais, comparando seus valores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & A primeira linha a ser comparada. \\
+\hline
+{\em rhs} & A segunda linha a ser comparada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true se as duas linhas têm os mesmos valores, false caso contrário. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_csv_linha_a1b539a2c1e50eeddd53774dd7c814c0f}\label{class_csv_linha_a1b539a2c1e50eeddd53774dd7c814c0f}} 
+\index{CsvLinha@{CsvLinha}!valores@{valores}}
+\index{valores@{valores}!CsvLinha@{CsvLinha}}
+\doxysubsubsection{\texorpdfstring{valores}{valores}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Csv\+Linha\+::valores\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/include/\mbox{\hyperlink{_csv_linha_8h}{Csv\+Linha.\+h}}\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/src/\mbox{\hyperlink{_csv_linha_8cpp}{Csv\+Linha.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="CsvLeitor::ler" name="CsvLeitor::ler">
+<area shape="rect" id="node1" title="Lê o arquivo CSV especificado e armazena os valores em um vetor de CsvLinha." alt="" coords="5,5,103,31"/>
+<area shape="rect" id="node2" href="$class_csv_linha.html#a8bd1405968a593fce335eec17a33a62b" title="Divide a linha em colunas." alt="" coords="151,5,276,31"/>
+</map>

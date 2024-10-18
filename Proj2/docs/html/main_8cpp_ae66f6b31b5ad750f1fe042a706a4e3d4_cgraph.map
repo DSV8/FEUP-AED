@@ -1,0 +1,39 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,179,56,204"/>
+<area shape="rect" id="node2" href="$class_geral.html#a35d59d7468951859fff79cfc9d7641ab" title="Lê os dados de aeroportos de um arquivo CSV e armazena em um vetor de Aeroporto." alt="" coords="107,104,243,129"/>
+<area shape="rect" id="node8" href="$class_geral.html#a86884c7e8d6abb93c1a475fed43e11fb" title="Lê os dados de companhias aéreas de um arquivo CSV e armazena em um vetor de Airline." alt="" coords="117,153,233,179"/>
+<area shape="rect" id="node9" href="$class_geral.html#a1170df32093bfd23b805ca89f4022029" title="Lê os dados de voo de um arquivo CSV e armazena em um vetor de Voo." alt="" coords="124,203,225,228"/>
+<area shape="rect" id="node15" href="$class_geral.html#af4f8274b1a1d141ddb7a9d2bdffb7be5" title="Exibe o menu principal do programa e permite ao utilizador escolher uma das opções disponíveis." alt="" coords="104,507,245,532"/>
+<area shape="rect" id="node3" href="$class_cidade.html#ae470f4bd059433442c41682bbcd12381" title="Adiciona um aeroporto à cidade." alt="" coords="307,5,452,31"/>
+<area shape="rect" id="node4" href="$class_graph.html#ae195d264a640713a5a3b193c79325446" title="Adiciona um nó ao grafo." alt="" coords="321,55,437,80"/>
+<area shape="rect" id="node5" href="$class_aeroporto.html#abe603fdea3a13c70c043fb7dbdef032f" title="Obtém o código do aeroporto." alt="" coords="308,104,451,129"/>
+<area shape="rect" id="node6" href="$class_csv_leitor.html#a8dad5de8334527ef89439b3a7d4a8847" title="Lê o arquivo CSV especificado e armazena os valores em um vetor de CsvLinha." alt="" coords="331,153,428,179"/>
+<area shape="rect" id="node7" href="$class_csv_linha.html#a8bd1405968a593fce335eec17a33a62b" title="Divide a linha em colunas." alt="" coords="574,153,699,179"/>
+<area shape="rect" id="node10" href="$class_graph.html#ac6074ee41e491063dd763406ced69164" title="Adiciona uma aresta ao grafo." alt="" coords="321,203,437,228"/>
+<area shape="rect" id="node11" href="$class_ferramentas.html#af10c5ae522db1625785acaf0658de66e" title=" " alt="" coords="513,203,760,228"/>
+<area shape="rect" id="node12" href="$class_aeroporto.html#a587f1a27cbb9ba2a0f08edee92786891" title="Obtém as coordenadas geográficas do aeroporto." alt="" coords="808,179,987,204"/>
+<area shape="rect" id="node13" href="$class_coordenadas.html#a5561c681caf5ccc77da0e61fd8d41dec" title="Obtém a latitude das coordenadas." alt="" coords="814,228,981,253"/>
+<area shape="rect" id="node14" href="$class_coordenadas.html#a9210daf8ada1613d53db2a527f3fa250" title="Obtém a longitude das coordenadas." alt="" coords="809,277,985,303"/>
+<area shape="rect" id="node16" href="$class_geral.html#a0fd13b42dbb816b21a9db42b0b92519e" title="Retorna uma lista com os códigos dos aeroportos que são pontos de articulação no grafo de voos,..." alt="" coords="299,476,460,501"/>
+<area shape="rect" id="node18" href="$class_geral.html#a04a38126f28bde32dee08760777e97fa" title="Calcula estatísticas globais sobre um país, companhia aérea ou voos." alt="" coords="293,685,465,711"/>
+<area shape="rect" id="node29" href="$class_geral.html#a0a0064df2348319e78f7ddb0806fd14f" title="Volta para o menu principal Esta função é utilizada para retornar ao menu principal após a realização..." alt="" coords="575,539,698,564"/>
+<area shape="rect" id="node30" href="$class_geral.html#a0ca8147157c0a7b6d97aa3baf6fff599" title="Obtém o caminho mais curto entre dois locais escolhidos pelo usuário." alt="" coords="298,376,461,401"/>
+<area shape="rect" id="node17" href="$class_graph.html#af8d54d72caf961cce6734886e35f8560" title=" " alt="" coords="561,474,713,514"/>
+<area shape="rect" id="node19" href="$class_geral.html#a41c0bb6da0497604cafc227eeb22f41f" title="Retorna um vetor com o número de aeroportos, cidades e países alcançáveis a partir do aeroporto com o..." alt="" coords="568,711,705,736"/>
+<area shape="rect" id="node23" href="$class_geral.html#a647f4c8911d342119c55982d56a42518" title="Retorna o número de voos partindo do aeroporto com o código especificado." alt="" coords="581,760,693,785"/>
+<area shape="rect" id="node24" href="$class_geral.html#a5bf6db1ed696e60a623c467f451decc2" title="Retorna o número de voos de cada companhia aérea partindo do aeroporto com o código especificado." alt="" coords="563,809,710,835"/>
+<area shape="rect" id="node25" href="$class_geral.html#a85e05b20f1e4f04f14d974966da79d89" title="Retorna o número de destinos diferentes para os quais há voos partindo do aeroporto com o código espe..." alt="" coords="559,859,714,884"/>
+<area shape="rect" id="node26" href="$class_geral.html#afbffc2bb467eaddfc16385a26d0423b2" title="Retorna o número de países diferentes para os quais há voos partindo do aeroporto com o código especi..." alt="" coords="569,588,705,613"/>
+<area shape="rect" id="node27" href="$_geral_8cpp.html#a3d43c59720e01a87d960efbafa46efc6" title=" " alt="" coords="615,661,659,687"/>
+<area shape="rect" id="node20" href="$class_graph.html#adb397499f22bc2558c264356fdd2a978" title=" " alt="" coords="856,711,939,736"/>
+<area shape="rect" id="node21" href="$class_graph.html#a69783a9e571ad1645dcff1b5488ccdb0" title=" " alt="" coords="1045,685,1127,711"/>
+<area shape="rect" id="node22" href="$class_graph.html#a846fb7b8e3483c7f8f49b5a4bc88cf40" title=" " alt="" coords="1035,735,1137,760"/>
+<area shape="rect" id="node28" href="$_geral_8cpp.html#a20e1b3eaea2f50bbb662ba1140fb44b5" title=" " alt="" coords="874,661,921,687"/>
+<area shape="rect" id="node31" href="$class_ferramentas.html#adbe456a63261eaded4e97ee6957c4ed4" title=" " alt="" coords="515,301,758,327"/>
+<area shape="rect" id="node32" href="$class_geral.html#ac2f752a78abdbd6bd388b8c7565ac4ac" title=" " alt="" coords="544,400,729,425"/>
+<area shape="rect" id="node33" href="$class_cidade.html#ae6cba8f4b488357e67d723c86cd8f39b" title="Obtém a lista de aeroportos da cidade." alt="" coords="562,252,711,277"/>
+<area shape="rect" id="node34" href="$class_graph.html#a58b2134bf5fa76fb6ce5ab68baa8d0e2" title="Calcula os caminhos mais curtos entre os nós de origem e destino, considerando apenas as companhias a..." alt="" coords="563,351,710,376"/>
+<area shape="rect" id="node35" href="$class_graph.html#a903f8a5713f191e86568b347d8f21945" title=" " alt="" coords="834,449,961,475"/>
+<area shape="rect" id="node36" href="$class_graph.html#ad822b5e8b10da2ed7bc6300ee46f52f4" title=" " alt="" coords="827,327,967,352"/>
+<area shape="rect" id="node37" href="$class_graph.html#a1030048180587b2cbdc72f123968e909" title=" " alt="" coords="833,376,961,401"/>
+</map>

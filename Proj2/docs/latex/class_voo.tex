@@ -1,0 +1,150 @@
+\hypertarget{class_voo}{}\doxysection{Voo Class Reference}
+\label{class_voo}\index{Voo@{Voo}}
+
+
+Classe que representa um voo entre dois aeroportos.  
+
+
+
+
+{\ttfamily \#include $<$Voo.\+h$>$}
+
+
+
+Collaboration diagram for Voo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_voo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_voo_a5f4d0ba187f035d7cec3a84e1d278232}{Voo}} (std\+::string origem\+\_\+, std\+::string destino\+\_\+, std\+::string airline\+\_\+)
+\item 
+std\+::string \mbox{\hyperlink{class_voo_a0ca9cd2ae2f6dbeec649087e4ef7abee}{get\+Origem}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o aeroporto de origem do voo. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_voo_a5388d2a509bd85932c85646a2849297d}{get\+Destino}} ()
+\begin{DoxyCompactList}\small\item\em Obtém o aeroporto de destino do voo. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_voo_a1b38bf9200c40e7bad4f419d2dde844e}{get\+Airline}} ()
+\begin{DoxyCompactList}\small\item\em Obtém a companhia aérea responsável pelo voo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_voo_a2e6e1c7aaaf3c20dad004879b06232f4}{origem}}
+\item 
+std\+::string \mbox{\hyperlink{class_voo_a31e3a1b7684226fe8373bb82809cb882}{destino}}
+\item 
+std\+::string \mbox{\hyperlink{class_voo_a0c45665dc0032d5e0d73c5a585329532}{airline}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_voo_a9f2de380843713d4a7ace8ab026835f9}{operator$<$$<$}} (std\+::ostream \&, const \mbox{\hyperlink{class_voo}{Voo}} \&)
+\begin{DoxyCompactList}\small\item\em Sobrecarga do operador de inserção em stream. Permite imprimir o voo em stream, de forma legível para o usuário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa um voo entre dois aeroportos. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_voo_a5f4d0ba187f035d7cec3a84e1d278232}\label{class_voo_a5f4d0ba187f035d7cec3a84e1d278232}} 
+\index{Voo@{Voo}!Voo@{Voo}}
+\index{Voo@{Voo}!Voo@{Voo}}
+\doxysubsubsection{\texorpdfstring{Voo()}{Voo()}}
+{\footnotesize\ttfamily Voo\+::\+Voo (\begin{DoxyParamCaption}\item[{std\+::string}]{origem\+\_\+,  }\item[{std\+::string}]{destino\+\_\+,  }\item[{std\+::string}]{airline\+\_\+ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_voo_a1b38bf9200c40e7bad4f419d2dde844e}\label{class_voo_a1b38bf9200c40e7bad4f419d2dde844e}} 
+\index{Voo@{Voo}!getAirline@{getAirline}}
+\index{getAirline@{getAirline}!Voo@{Voo}}
+\doxysubsubsection{\texorpdfstring{getAirline()}{getAirline()}}
+{\footnotesize\ttfamily std\+::string Voo\+::get\+Airline (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém a companhia aérea responsável pelo voo. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_voo_a5388d2a509bd85932c85646a2849297d}\label{class_voo_a5388d2a509bd85932c85646a2849297d}} 
+\index{Voo@{Voo}!getDestino@{getDestino}}
+\index{getDestino@{getDestino}!Voo@{Voo}}
+\doxysubsubsection{\texorpdfstring{getDestino()}{getDestino()}}
+{\footnotesize\ttfamily std\+::string Voo\+::get\+Destino (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém o aeroporto de destino do voo. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_voo_a0ca9cd2ae2f6dbeec649087e4ef7abee}\label{class_voo_a0ca9cd2ae2f6dbeec649087e4ef7abee}} 
+\index{Voo@{Voo}!getOrigem@{getOrigem}}
+\index{getOrigem@{getOrigem}!Voo@{Voo}}
+\doxysubsubsection{\texorpdfstring{getOrigem()}{getOrigem()}}
+{\footnotesize\ttfamily std\+::string Voo\+::get\+Origem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtém o aeroporto de origem do voo. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_voo_a9f2de380843713d4a7ace8ab026835f9}\label{class_voo_a9f2de380843713d4a7ace8ab026835f9}} 
+\index{Voo@{Voo}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Voo@{Voo}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_voo}{Voo}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Sobrecarga do operador de inserção em stream. Permite imprimir o voo em stream, de forma legível para o usuário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Stream de saída. \\
+\hline
+{\em obj} & O voo a ser impresso. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A stream de saída, para permitir encadeamento. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_voo_a0c45665dc0032d5e0d73c5a585329532}\label{class_voo_a0c45665dc0032d5e0d73c5a585329532}} 
+\index{Voo@{Voo}!airline@{airline}}
+\index{airline@{airline}!Voo@{Voo}}
+\doxysubsubsection{\texorpdfstring{airline}{airline}}
+{\footnotesize\ttfamily std\+::string Voo\+::airline\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_voo_a31e3a1b7684226fe8373bb82809cb882}\label{class_voo_a31e3a1b7684226fe8373bb82809cb882}} 
+\index{Voo@{Voo}!destino@{destino}}
+\index{destino@{destino}!Voo@{Voo}}
+\doxysubsubsection{\texorpdfstring{destino}{destino}}
+{\footnotesize\ttfamily std\+::string Voo\+::destino\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_voo_a2e6e1c7aaaf3c20dad004879b06232f4}\label{class_voo_a2e6e1c7aaaf3c20dad004879b06232f4}} 
+\index{Voo@{Voo}!origem@{origem}}
+\index{origem@{origem}!Voo@{Voo}}
+\doxysubsubsection{\texorpdfstring{origem}{origem}}
+{\footnotesize\ttfamily std\+::string Voo\+::origem\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/include/\mbox{\hyperlink{_voo_8h}{Voo.\+h}}\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/src/\mbox{\hyperlink{_voo_8cpp}{Voo.\+cpp}}\end{DoxyCompactItemize}

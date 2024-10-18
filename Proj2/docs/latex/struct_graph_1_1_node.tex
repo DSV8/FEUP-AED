@@ -1,0 +1,123 @@
+\hypertarget{struct_graph_1_1_node}{}\doxysection{Graph\+::Node Struct Reference}
+\label{struct_graph_1_1_node}\index{Graph::Node@{Graph::Node}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+
+
+Collaboration diagram for Graph\+::Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{struct_graph_1_1_node__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_aeroporto}{Aeroporto}} \mbox{\hyperlink{struct_graph_1_1_node_aa83d95a6e4dfb3febacd500f17d877cf}{airport}}
+\begin{DoxyCompactList}\small\item\em Representa um nó em um grafo de voos. Cada nó representa um aeroporto e tem uma lista de arestas que apontam para outros nós. \end{DoxyCompactList}\item 
+list$<$ \mbox{\hyperlink{struct_graph_1_1_edge}{Edge}} $>$ \mbox{\hyperlink{struct_graph_1_1_node_ad76e2bceaa07be97bce270751f0e72ae}{adj}}
+\begin{DoxyCompactList}\small\item\em Lista de arestas que saem desse nó. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_graph_1_1_node_a50b5c3a5015ebb01cada96ede1ca96da}{visited}}
+\begin{DoxyCompactList}\small\item\em Indica se o nó já foi visitado durante uma busca. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_graph_1_1_node_a08807c82cf25be7613a8faa6bcdd150b}{low}}
+\begin{DoxyCompactList}\small\item\em Variável usada durante a detecção de ciclos. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_graph_1_1_node_ac0e4f753b4baa35a3ee5c6b7bab0c304}{num}}
+\begin{DoxyCompactList}\small\item\em Variável usada durante a detecção de ciclos. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{struct_graph_1_1_node_a5e1821da73c93ac87cbf73b26d7cf48a}{ciclo}}
+\begin{DoxyCompactList}\small\item\em Indica se o nó está em um ciclo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_graph_1_1_node_ac2bc3b8a640c896c276bd6ee1e3c41f3}{parent}}
+\begin{DoxyCompactList}\small\item\em Nó pai na árvore geradora mínima. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{struct_graph_1_1_node_ac074c714ea46cabefa29ec05720b843d}{node\+Dist}}
+\begin{DoxyCompactList}\small\item\em Distância até o nó pai na árvore geradora mínima. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_graph_1_1_node_ad76e2bceaa07be97bce270751f0e72ae}\label{struct_graph_1_1_node_ad76e2bceaa07be97bce270751f0e72ae}} 
+\index{Graph::Node@{Graph::Node}!adj@{adj}}
+\index{adj@{adj}!Graph::Node@{Graph::Node}}
+\doxysubsubsection{\texorpdfstring{adj}{adj}}
+{\footnotesize\ttfamily Graph\+::\+Node\+::adj}
+
+
+
+Lista de arestas que saem desse nó. 
+
+\mbox{\Hypertarget{struct_graph_1_1_node_aa83d95a6e4dfb3febacd500f17d877cf}\label{struct_graph_1_1_node_aa83d95a6e4dfb3febacd500f17d877cf}} 
+\index{Graph::Node@{Graph::Node}!airport@{airport}}
+\index{airport@{airport}!Graph::Node@{Graph::Node}}
+\doxysubsubsection{\texorpdfstring{airport}{airport}}
+{\footnotesize\ttfamily Graph\+::\+Node\+::airport}
+
+
+
+Representa um nó em um grafo de voos. Cada nó representa um aeroporto e tem uma lista de arestas que apontam para outros nós. 
+
+Dados do aeroporto. \mbox{\Hypertarget{struct_graph_1_1_node_a5e1821da73c93ac87cbf73b26d7cf48a}\label{struct_graph_1_1_node_a5e1821da73c93ac87cbf73b26d7cf48a}} 
+\index{Graph::Node@{Graph::Node}!ciclo@{ciclo}}
+\index{ciclo@{ciclo}!Graph::Node@{Graph::Node}}
+\doxysubsubsection{\texorpdfstring{ciclo}{ciclo}}
+{\footnotesize\ttfamily Graph\+::\+Node\+::ciclo}
+
+
+
+Indica se o nó está em um ciclo. 
+
+\mbox{\Hypertarget{struct_graph_1_1_node_a08807c82cf25be7613a8faa6bcdd150b}\label{struct_graph_1_1_node_a08807c82cf25be7613a8faa6bcdd150b}} 
+\index{Graph::Node@{Graph::Node}!low@{low}}
+\index{low@{low}!Graph::Node@{Graph::Node}}
+\doxysubsubsection{\texorpdfstring{low}{low}}
+{\footnotesize\ttfamily Graph\+::\+Node\+::low}
+
+
+
+Variável usada durante a detecção de ciclos. 
+
+\mbox{\Hypertarget{struct_graph_1_1_node_ac074c714ea46cabefa29ec05720b843d}\label{struct_graph_1_1_node_ac074c714ea46cabefa29ec05720b843d}} 
+\index{Graph::Node@{Graph::Node}!nodeDist@{nodeDist}}
+\index{nodeDist@{nodeDist}!Graph::Node@{Graph::Node}}
+\doxysubsubsection{\texorpdfstring{nodeDist}{nodeDist}}
+{\footnotesize\ttfamily Graph\+::\+Node\+::node\+Dist}
+
+
+
+Distância até o nó pai na árvore geradora mínima. 
+
+\mbox{\Hypertarget{struct_graph_1_1_node_ac0e4f753b4baa35a3ee5c6b7bab0c304}\label{struct_graph_1_1_node_ac0e4f753b4baa35a3ee5c6b7bab0c304}} 
+\index{Graph::Node@{Graph::Node}!num@{num}}
+\index{num@{num}!Graph::Node@{Graph::Node}}
+\doxysubsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily Graph\+::\+Node\+::num}
+
+
+
+Variável usada durante a detecção de ciclos. 
+
+\mbox{\Hypertarget{struct_graph_1_1_node_ac2bc3b8a640c896c276bd6ee1e3c41f3}\label{struct_graph_1_1_node_ac2bc3b8a640c896c276bd6ee1e3c41f3}} 
+\index{Graph::Node@{Graph::Node}!parent@{parent}}
+\index{parent@{parent}!Graph::Node@{Graph::Node}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily Graph\+::\+Node\+::parent}
+
+
+
+Nó pai na árvore geradora mínima. 
+
+\mbox{\Hypertarget{struct_graph_1_1_node_a50b5c3a5015ebb01cada96ede1ca96da}\label{struct_graph_1_1_node_a50b5c3a5015ebb01cada96ede1ca96da}} 
+\index{Graph::Node@{Graph::Node}!visited@{visited}}
+\index{visited@{visited}!Graph::Node@{Graph::Node}}
+\doxysubsubsection{\texorpdfstring{visited}{visited}}
+{\footnotesize\ttfamily Graph\+::\+Node\+::visited}
+
+
+
+Indica se o nó já foi visitado durante uma busca. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/gabri/\+Documents/aed/\+Projeto-\/\+Aed-\/2/include/\mbox{\hyperlink{_graph_8h}{Graph.\+h}}\end{DoxyCompactItemize}
